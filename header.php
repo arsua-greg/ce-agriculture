@@ -22,6 +22,14 @@
 <body <?php body_class(); ?>>
     <main>
         <div class="page__header">
-            <header></header>
+            <header>
+                <nav>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-        
