@@ -1,0 +1,15 @@
+.page__header {
+  background-color: #000;
+  color: #fff;
+
+  .link-list {
+    &__item {
+      a {
+        color: #fff;
+        font-family: $font-family-base;
+        font-weight: 400;
+        @include font-line(15px, 21px);
+      }
+    }
+  }
+}
