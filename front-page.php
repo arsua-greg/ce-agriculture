@@ -8,6 +8,7 @@
     <section class="sect_2">
         <div class="l-wrap">
             <h1>section 2</h1>
+            <div>edsel</div>
         </div>
     </section>
     <section class="sect_3">
