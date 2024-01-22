@@ -1,7 +1,51 @@
 .sect_1 {
-  h1 {
+  padding-top: 43px;
+
+  .blog-container {
+    padding-top: 35px;
+    @include is-min($breakpoint-sp) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 -16px;
+    }
     @include is-sp {
-      font-size: 50px;
+      padding-top: 25px;
+    }
+
+    .blog-item {
+      @include is-min($breakpoint-sp) {
+        width: calc(100% / 4);
+        padding: 0 16px;
+      }
+      @include is-sp {
+        padding: 0 0 25px 0;
+      }
+
+      .category {
+        background-color: $color-sub;
+        padding: 5px 15px;
+        width: max-content;
+        margin: 15px 0;
+
+        @include is-sp {
+          margin: 15px auto;
+        }
+
+        img {
+          aspect-ratio: 1;
+        }
+
+        p {
+          @include font-line(16px);
+          color: #fff;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+      .title {
+        @include font-line(16px, 30px);
+        font-weight: 300;
+      }
     }
   }
 }
