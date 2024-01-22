@@ -1,4 +1,9 @@
 .sect_1 {
+  h1 {
+    @include is-sp {
+      font-size: 50px;
+    }
+  }
 }
 .sect_2 {
 }

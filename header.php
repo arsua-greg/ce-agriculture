@@ -26,7 +26,7 @@
     <main>
         <div class="page__header">
             <header class="pc-only">
-                <nav>
+                <nav class="header">
                     <div class="logo">
                         <img src="<?php echo get_template_directory_uri(); ?>/release/image/logo.png" alt="Logo">
                     </div>

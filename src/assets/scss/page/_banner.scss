@@ -1,0 +1,44 @@
+.banner {
+  position: relative;
+  height: 700px;
+  background-image: url("../image/banner/banner_img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .banner_container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &__float {
+    border: 1px solid #d29500;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    max-width: 320px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.banner_btn {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  background-color: #000;
+  border: 1px solid #d29500;
+  max-width: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  p {
+    color: #fff;
+    font-family: $font-family-en;
+  }
+}
