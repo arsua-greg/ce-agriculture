@@ -9,3 +9,9 @@
     display: none;
   }
 }
+
+.column-reverse {
+  @include is-max($breakpoint-max-tab) {
+    flex-direction: column-reverse;
+  }
+}
