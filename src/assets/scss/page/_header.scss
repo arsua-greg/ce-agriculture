@@ -30,6 +30,13 @@
         }
       }
     }
+
+    .nav-sp {
+      display: none;
+      @include is-max($breakpoint-max-tab) {
+        display: flex;
+      }
+    }
   }
 
   &--hamburger {
