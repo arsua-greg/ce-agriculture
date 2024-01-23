@@ -1,3 +1,8 @@
-.l-container {
+@import "mixins/media";
+
+.l-wrap {
   padding: 0 50px;
+  @include is-sp {
+    padding: 0 20px;
+  }
 }

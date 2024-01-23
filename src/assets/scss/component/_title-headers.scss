@@ -1,0 +1,25 @@
+@import "mixins/font-line";
+
+.title-main {
+  @include font-line(40px, 40px);
+  font-family: $font-family-serif;
+  font-weight: 500;
+
+  @include is-sp {
+    @include font-line(30px, 40px);
+  }
+}
+
+.sub-title {
+  @include font-line(18px, 22px);
+  color: $color-sub;
+  display: block;
+  font-family: $font-family-en;
+  font-weight: 400;
+  margin-top: 16px;
+
+  @include is-sp {
+    @include font-line(15px, 19px);
+    margin-top: 6px;
+  }
+}
