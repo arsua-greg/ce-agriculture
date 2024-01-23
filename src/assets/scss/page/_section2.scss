@@ -3,6 +3,11 @@
   @include is-max($breakpoint-max-tab) {
     padding-top: 45px;
   }
+  .c-btn {
+    p{
+      color: white;
+    }
+  }
   .second2-1 {
     padding-bottom: 150px;
     display: flex;
@@ -41,7 +46,7 @@
             padding-bottom: 15px;
           }
           .prgrph1 {
-            padding-bottom: 15px;
+            padding-bottom: 31px;
           }
         }
       }
@@ -50,6 +55,9 @@
         .datail-box {
           h2 {
             padding-top: 20px;
+            text-align: center;
+          }
+          h3 {
             text-align: center;
           }
           .text1 {
@@ -90,6 +98,11 @@
         font-family: $font-family-serif;
         font-weight: 600;
         padding-bottom: 16px;
+        @include is-max($breakpoint-sp) {
+          @include font-line(20px, 30px);
+          font-weight: 500;
+          padding: 0px 0px 16px 0px;
+        }
       }
 
       .text1 {
@@ -113,14 +126,7 @@
       .prgrph1 {
         padding-bottom: 38px;
       }
-      .abth1 {
-        @include is-max($breakpoint-sp) {
-          @include font-line(20px, 30px);
-          font-weight: 500;
-          padding: 0px 0px 16px 0px;
-        }
-        padding-bottom: 26px;
-      }
+      
     }
     .db {
       padding-left: 45px;
