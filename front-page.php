@@ -30,15 +30,17 @@
                 $the_query = new WP_Query($args);
                 ?>
 
-                <?php if ($the_query->have_posts()) : ?>
-                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                <?php if ($the_query->have_posts()): ?>
+                    <?php while ($the_query->have_posts()):
+                        $the_query->the_post(); ?>
                         <a href="<?php echo the_permalink(); ?>" class="blog-item">
                             <!-- <div class="blog-item"> -->
                             <div class="blog-img">
                                 <?php
                                 $featured_img = the_post_thumbnail();
-                                if ($featured_img == "") : ?>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/blog_default_img.png" alt="">
+                                if ($featured_img == ""): ?>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/blog_default_img.png"
+                                        alt="">
                                 <?php endif; ?>
                             </div>
                             <div class="category">
@@ -49,7 +51,9 @@
                                     </p>
                                 <?php endforeach; ?>
                             </div>
-                            <p class="title"><?php echo get_the_title(); ?></p>
+                            <p class="title">
+                                <?php echo get_the_title(); ?>
+                            </p>
                             <!-- </div> -->
                         </a>
                     <?php endwhile; ?>
@@ -78,7 +82,7 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/東御という土地を選んだ理由.png"
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/ricefield.png"
                             alt=""></div>
                     <p class="column-title">東御という土地を選んだ理由</p>
                     <p class="column-description">
@@ -88,7 +92,7 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/R0003559.png"
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/red_grapes.png"
                             alt=""></div>
                     <p class="column-title">農薬節減栽培から本来の味へ</p>
                     <p class="column-description">
@@ -98,7 +102,7 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/R0003785.png"
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/landscape.png"
                             alt=""></div>
                     <p class="column-title">土地のポテンシャルを引き出す</p>
                     <p class="column-description">
@@ -108,9 +112,10 @@
             </div>
 
             <div class="anchorTagBtn">
-                <a href="">
-                    詳しくはこちら
-                </a>
+            <a class="c-btn" href="">
+                            <p>詳しくはこちら</p>
+                            <img src="<?php echo get_template_directory_uri();?>/release/image/arrow_link.svg" alt="">
+                        </a>
             </div>
         </div>
         <!--  Second Element -->
@@ -124,7 +129,7 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/PXL_20230723_010120440.png"
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/garden.png"
                             alt=""></div>
                     <p class="column-title">自然循環農法がもたらす事</p>
                     <p class="column-description">
@@ -134,7 +139,7 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/R0003591.png"
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/person_with_cap.png"
                             alt=""></div>
                     <p class="column-title">
                         安全って？安心って？<br>
@@ -147,7 +152,7 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/mud.png" alt="">
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/soil.png" alt="">
                     </div>
                     <p class="column-title">土壌を育てる</p>
                     <p class="column-description">
@@ -155,13 +160,39 @@
                 </div>
             </div>
 
-            <div class="anchorTagBtn">
-                <a href="">
-                    詳しくはこちら
-                </a>
+            <div class="anchorTagBtn1">
+            <a class="c-btn" href="">
+                            <p>詳しくはこちら</p>
+                            <img src="<?php echo get_template_directory_uri();?>/release/image/arrow_link.svg" alt="">
+                        </a>
             </div>
         </div>
+        <!--  Third Element -->
+        <div class='l-wrap-2'>
+            <div class='custom-flex-container'>
+                <div class='custom-item-column'>
+                    <h2 class="title-main">SDGS</h2>
+                    <p class="sub-title">SDGs</p>
+                    <p class="question">SDGSって何？</p>
+                    <p class="answer">SDGsは、2030年までに達成すべき17の国際目標です。これらの目標は、貧困、不平等、気候変動などのグローバルな課題を解決するための道筋を示しています。</p>
+                    <p class='text-cultivation'>環境に配慮した自然循環栽培</p>
+                    <p class='text-industry'>農林水産業が掲げる「みどりの食料システム」に準拠しています。</p>
+                    <div class="anchorTagBtn2">
+                        <a class="c-btn" href="">
+                            <p>詳しくはこちら</p>
+                            <img src="<?php echo get_template_directory_uri();?>/release/image/arrow_link.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class='custom-item-column'>
+                    <div class="column-img"><img
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/grapes_with_person.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
 
+        </div>
 
     </section>
 </div>
