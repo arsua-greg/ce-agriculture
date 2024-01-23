@@ -94,7 +94,7 @@
                 <p class="text1">No Chemical</p>
                 <p class="paragraph1 prgrph1">当園自慢のぶどうは、全て信州の環境にやさしい農産物50（長野県認証）認定を受けた、おいしさと安全を追求した逸品です。</p>
 
-                <h2 class="about-head abth1">信州の環境にやさしい農産物について</h2>
+                <h3 class="about-head abth1">信州の環境にやさしい農産物について</h3>
                 <p class="paragraph1">
                     化学肥料及び化学合成農薬について、「地域慣行施肥量」及び「地区農薬使用回数」の50％以上を削減(認証区分：50-50)した方法で栽培された農産物を認証する制度。詳しくはこちらをご覧ください。</p>
                 <a class="c-btn" href="">
@@ -109,7 +109,8 @@
                 <div class="datail-box">
                     <h2>生産者</h2>
                     <p class="text1">Producer</p>
-                    <p class="paragraph1">『東御のぶどうの味をもっと沢山の人に伝えたい。』<br/>
+                    <p class="paragraph1">『東御のぶどうの味をもっと沢山の人に伝えたい。』<br />
+
                         東京でITエンジニアとしてのキャリアから転身、ぶどう栽培の道へ進むため長野の東御に移住。自然循環栽培の草分け的な存在に。ぶどうの生食用にとどまらず、加工品も展開。東御ブランドの新しい可能性を探求し続けています。
                     </p>
                     <a class="c-btn" href="">
@@ -171,10 +172,10 @@
             </div>
 
             <div class="anchorTagBtn">
-            <a class="c-btn" href="">
-                            <p>詳しくはこちら</p>
-                            <img src="<?php echo get_template_directory_uri();?>/release/image/arrow_link.svg" alt="">
-                        </a>
+                <a class="c-btn" href="">
+                    <p>詳しくはこちら</p>
+                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
+                </a>
             </div>
         </div>
         <!--  Second Element -->
@@ -188,8 +189,8 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/garden.png"
-                            alt=""></div>
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/garden.png" alt="">
+                    </div>
                     <p class="column-title">自然循環農法がもたらす事</p>
                     <p class="column-description">
                         自然循環農法は、土壌の健康を維持し、生物多様性を促進し、持続可能な食物生産を実現します。これは、自然と共生する農業の未来を描きます。
@@ -198,8 +199,8 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/person.png"
-                            alt=""></div>
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/person.png" alt="">
+                    </div>
                     <p class="column-title">
                         安全って？安心って？<br>
                         食用ぶどうの本来の味
@@ -220,10 +221,10 @@
             </div>
 
             <div class="anchorTagBtn1">
-            <a class="c-btn" href="">
-                            <p>詳しくはこちら</p>
-                            <img src="<?php echo get_template_directory_uri();?>/release/image/arrow_link.svg" alt="">
-                        </a>
+                <a class="c-btn" href="">
+                    <p>詳しくはこちら</p>
+                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
+                </a>
             </div>
         </div>
         <!--  Third Element -->
@@ -239,7 +240,7 @@
                     <div class="anchorTagBtn2">
                         <a class="c-btn" href="">
                             <p>詳しくはこちら</p>
-                            <img src="<?php echo get_template_directory_uri();?>/release/image/arrow_link.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                         </a>
                     </div>
                 </div>
