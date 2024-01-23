@@ -59,6 +59,7 @@
     <section class="sect_2">
         <div class="second2-1 column-reverse">
             <div class="datail-box">
+                <!-- asdf -->
                 <h2>自然循環栽培法</h2>
                 <p class="text1">Natural Circulation</p>
                 <p class="paragraph1">
