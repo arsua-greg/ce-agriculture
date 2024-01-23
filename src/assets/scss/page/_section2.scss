@@ -35,6 +35,10 @@
         .c-btn {
           margin-left: auto;
         }
+        @include is-max($breakpoint-max-tab) {
+          width: 100%;
+          padding: 0 20px;
+        }
       }
       @include is-max($breakpoint-sp) {
         .datail-box {
@@ -94,10 +98,10 @@
       }
 
       .about-head {
-        @include font-line(25px);
+        @include font-line(25px, 40px);
         font-family: $font-family-serif;
         font-weight: 600;
-        padding-bottom: 16px;
+        padding-bottom: 26px;
         @include is-max($breakpoint-sp) {
           @include font-line(20px, 30px);
           font-weight: 500;
