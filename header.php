@@ -25,13 +25,13 @@
 <body <?php body_class(); ?>>
     <main>
         <div class="page__header">
-            <header class="pc-only">
+            <header>
                 <nav class="header">
                     <div class="logo">
                         <a href="<?php echo get_home_url(); ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/logo.png" alt="Logo"></a>
                     </div>
-                    <ul class="link-list">
+                    <ul class="pc-only link-list">
                         <li class="link-list__item"><a href="">こもだ果樹園について</a></li>
                         <li class="link-list__item"><a href="">自然循環栽培法</a></li>
                         <li class="link-list__item"><a href="">こだわり</a></li>
@@ -41,26 +41,30 @@
                         <li class="link-list__item"><a href="">取り組み</a></li>
                         <li class="link-list__item"><a href="">商 品</a></li>
                     </ul>
-                </nav>
-            </header>
-            <header class="sp-only">
-                <div class="page__header--hamburger">
-                    <span></span>
-                    <span></span>
-                </div>
-                <nav>
-                    <ul>
-                        <li>こもだ果樹園について</li>
-                        <li>自然循環栽培法</li>
-                        <li>こだわり</li>
-                        <li>取り組み</li>
-                        <li>SDGs</li>
-                        <li>商 品</li>
-                        <a href="">
-                            <p>Online Shop</p>
-                            <img src="" alt="Online Shop Button">
-                        </a>
-                    </ul>
+                    <div class="header--hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <div class="nav-sp">
+                            <nav class="header sp-only">
+                                <ul class="link-list">
+                                    <li class="link-list__item">こもだ果樹園について</li>
+                                    <li class="link-list__item">自然循環栽培法</li>
+                                    <li class="link-list__item">こだわり</li>
+                                    <li class="link-list__item">取り組み</li>
+                                    <li class="link-list__item">SDGs</li>
+                                    <li class="link-list__item">商 品</li>
+                                    <li>
+                                        <a class="c-btn" href="">
+                                            <p>Online Shop</p>
+                                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="Online Shop Button">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 </nav>
             </header>
         </div>
