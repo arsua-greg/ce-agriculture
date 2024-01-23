@@ -194,7 +194,7 @@
 
                 <div class="column-item">
                     <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/person_with_cap.png"
+                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/person.png"
                             alt=""></div>
                     <p class="column-title">
                         安全って？安心って？<br>
