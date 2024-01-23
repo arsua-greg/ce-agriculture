@@ -1,0 +1,22 @@
+.page {
+  &__single {
+    padding: 50px 0;
+  }
+
+  .post_content {
+    &--title {
+      @include font-line(30px, 32px);
+      font-family: $font-family-serif;
+      font-weight: 300;
+    }
+    &--date {
+      @include font-line(18px, 22px);
+      font-family: $font-family-en;
+      font-weight: 400;
+    }
+    &--content {
+      @include font-line(16px, 32px);
+      font-weight: 300;
+    }
+  }
+}
