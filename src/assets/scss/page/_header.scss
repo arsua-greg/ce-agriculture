@@ -7,14 +7,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include is-max($breakpoint-max-tab) {
+      padding: 0 20px 0 0;
+    }
 
     .logo {
       max-width: 320px;
       width: 100%;
+      @include is-max($breakpoint-sp) {
+        max-width: 193px;
+      }
     }
 
     .link-list {
-      display: flex;
       &__item {
         a {
           @include font-line(15px, 21px);
@@ -23,6 +28,18 @@
           font-weight: 400;
           padding-right: 50px;
         }
+      }
+    }
+  }
+
+  &--hamburger {
+    span {
+      display: block;
+      width: 18px;
+      height: 1px;
+      background-color: #fff;
+      &:not(:first-child) {
+        margin-top: 5px;
       }
     }
   }
