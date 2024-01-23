@@ -2,14 +2,25 @@
 
 .sp-only {
   display: none;
+  justify-content: space-between;
+  align-items: center;
+  @include is-max($breakpoint-max-tab) {
+    display: flex;
+  }
 }
 
 .pc-only {
-  @include is-sp {
+  display: flex;
+  @include is-max($breakpoint-max-tab) {
     display: none;
   }
 }
 
+.column-reverse {
+  @include is-max($breakpoint-max-tab) {
+    flex-direction: column-reverse;
+  }
+}
 .text-center {
   text-align: center;
 }
