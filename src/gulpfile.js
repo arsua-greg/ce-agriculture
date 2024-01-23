@@ -5,10 +5,7 @@
 
 ********************************** */
 // Local project URL of your already running WordPress site.
-
-
-const projectURL = "https://localhost/greg/";
-
+const projectURL = "http://ce_agriculture.test/";
 // Theme/Plugin URL. Leave it like it is; since our gulpfile.js lives in the root folder.
 const productURL = "../";
 const browserAutoOpen = true;
