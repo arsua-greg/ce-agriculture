@@ -9,6 +9,14 @@
         flex-direction: column-reverse;
       }
     }
+    &:nth-child(2) {
+      .datail-box{
+        a{
+          margin-left: auto;
+          display: block;
+        }
+      }
+    }
     @include is-max($breakpoint-max-tab) {
       flex-direction: column;
     }
