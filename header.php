@@ -26,10 +26,9 @@
     <main>
         <div class="page__header">
             <header class="pc-only">
-                <nav class="header">
+                <nav>
                     <div class="logo">
-                        <a href="<?php echo get_home_url(); ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/logo.png" alt="Logo"></a>
+                        <img src="<?php echo get_template_directory_uri(); ?>/release/image/logo.png" alt="Logo">
                     </div>
                     <ul class="link-list">
                         <li class="link-list__item"><a href="">こもだ果樹園について</a></li>

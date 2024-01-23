@@ -1,15 +1,9 @@
-@import "mixins/_media.scss";
-
 .sp-only {
   display: none;
 }
 
-.pc-only {
-  @include is-sp {
-    display: none;
-  }
-}
-
-.text-center {
-  text-align: center;
-}
+// .pc-only {
+//   @include is-max(749px) {
+//     display: none;
+//   }
+// }

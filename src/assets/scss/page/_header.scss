@@ -1,28 +1,14 @@
 .page__header {
   background-color: #000;
   color: #fff;
-  border-bottom: 1px solid #d29500;
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .logo {
-      max-width: 320px;
-      width: 100%;
-    }
-
-    .link-list {
-      display: flex;
-      &__item {
-        a {
-          @include font-line(15px, 21px);
-          color: #fff;
-          font-family: $font-family-base;
-          font-weight: 400;
-          padding-right: 50px;
-        }
+  .link-list {
+    &__item {
+      a {
+        color: #fff;
+        font-family: $font-family-base;
+        font-weight: 400;
+        @include font-line(15px, 21px);
       }
     }
   }
