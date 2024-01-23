@@ -30,22 +30,21 @@
                 $the_query = new WP_Query($args);
                 ?>
 
-                <?php if ($the_query->have_posts()): ?>
-                    <?php while ($the_query->have_posts()):
+                <?php if ($the_query->have_posts()) : ?>
+                    <?php while ($the_query->have_posts()) :
                         $the_query->the_post(); ?>
                         <a href="<?php echo the_permalink(); ?>" class="blog-item">
                             <!-- <div class="blog-item"> -->
                             <div class="blog-img">
                                 <?php
                                 $featured_img = the_post_thumbnail();
-                                if ($featured_img == ""): ?>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/blog_default_img.png"
-                                        alt="">
+                                if ($featured_img == "") : ?>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/blog_default_img.png" alt="">
                                 <?php endif; ?>
                             </div>
                             <div class="category">
                                 <?php $categories = get_the_category();
-                                foreach ($categories as $category): ?>
+                                foreach ($categories as $category) : ?>
                                     <p>
                                         <?php echo $category->name; ?>
                                     </p>
@@ -115,15 +114,100 @@
                 </div>
                 <div class="img-box">
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/section2/03.png" alt="">
-                    <img class="signature"
-                        src="<?php echo get_template_directory_uri(); ?>/release/image/section2/04.png" alt="">
+                    <img class="signature" src="<?php echo get_template_directory_uri(); ?>/release/image/section2/04.png" alt="">
                 </div>
             </div>
         </div>
     </section>
     <section class="sect_3">
         <div class="l-wrap">
-            <h1>section 3</h1>
+            <div class="sect_3__title">
+                <h2 class="title-main">商 品</h2>
+                <span class="sub-title">Products</span>
+            </div>
+            <div class="sect_3__text-content">
+                <p class="sect_3__text-content--text">東御こもだ果樹園では、黒・緑・赤の3 色のぶどうを栽培しています。それぞれの品種には個性がありますが、共通の美味しさの基準は以下のようなものです。<br />
+                    ・枝の状態は鮮やかな緑色で、収穫から時間が経っていないものが新鮮です。<br />
+                    ・実の状態は色づきが良く、ブルーム*1 が付いているものが甘くてジューシーです。<br />
+                    ・糖度は18 度以上が高品質とされています*2 。<br />
+                    これらの基準を満たすぶどうを、信州の環境にやさしい農産物5050（長野県認証）の基準に従って栽培しています。日照時間が長く、昼夜の寒暖差が大きい東御市の南斜面は、ぶどうの甘みと酸味のバランスを引き出す最適な環境となっています。農薬や化学肥料の使用量を減らし、健全な土壌維持と適切な着房制限を行うことにより、味わい深く高品質なぶどうを育てています。ぜひ、東御こもだ果樹園のぶどうをご賞味ください。<br />
+
+                    *1 ブルームとは、ぶどうの表面に付いている白い粉のようなもので、ぶどうが自ら分泌する天然の蝋（ろう）物質です。ブルームはぶどうを水分の蒸発や病気から守り、鮮度を保つ役割があります。ブルームは無害で食べても問題ありません。<br />
+                    *2 糖度や食味は、品種ごとの違いや、その年の気候によって変わります。このため、同じ品種でも年によって味が異なることがあります。こもだ果樹園では、その年々の変化を大切にしながら、一貫して高品質を保つよう努めています。ぜひ、その年ごとの味の違いを楽しんでいただき、自然の魅力を感じていただければ幸いです。</p>
+            </div>
+            <button type="button" class="c-btn sect_3__btn" onclick="showText()">
+                <p>もっと読む</p>
+                <img src="<?php echo get_template_directory_uri(); ?>/release/image/section_3/arrow_down.svg" alt="">
+            </button>
+        </div>
+        <div class="sect_3__product-images">
+            <?php
+            $products = [
+                [
+                    "image" => "sect_3_img_1.png",
+                    "title" => "Kyoho",
+                    "jp_name" => "巨 峰",
+                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                ],
+                [
+                    "image" => "sect_3_img_2.png",
+                    "title" => "Nagano Purple",
+                    "jp_name" => "ナガノパープル",
+                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                ],
+                [
+                    "image" => "sect_3_img_3.png",
+                    "title" => "Shine Masquat",
+                    "jp_name" => "シャインマスカット",
+                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                ],
+                [
+                    "image" => "sect_3_img_4.png",
+                    "title" => "Queen Rouge",
+                    "jp_name" => "クイーンルージュ",
+                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                ],
+                [
+                    "image" => "sect_3_img_5.png",
+                    "title" => "Queen Nina",
+                    "jp_name" => "クイーンニーナ",
+                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                ],
+                [
+                    "image" => "sect_3_img_6.png",
+                    "title" => "Queen Seven",
+                    "jp_name" => "クイーンセブン",
+                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                ],
+                [
+                    "image" => "sect_3_img_7.png",
+                    "title" => "Grape Juice",
+                    "jp_name" => "ぶどうジュース",
+                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                ],
+                [
+                    "image" => "sect_3_img_8.png",
+                    "title" => "Semi Dry",
+                    "jp_name" => "セミドライ",
+                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                ],
+            ];
+
+            foreach ($products as $product) :
+            ?>
+                <div class="product-item">
+                    <img src="<?= get_template_directory_uri(); ?>/release/image/section_3/<?= $product["image"]; ?>" alt="">
+                    <div class="product-item__float">
+                        <p class="product-item__title"><?= $product["title"]; ?></p>
+                        <p class="product-item__jp-name"><?= $product["jp_name"]; ?></p>
+                        <p class="product-item__catchphrase"><?= $product["catchphrase"]; ?></p>
+                        <button type="button" class="c-btn product-item__btn">
+                            <p>Online Shop</p>
+                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </section>
     <section class="sect_4">
@@ -136,9 +220,7 @@
             <div class="horizontal-container">
 
                 <div class="column-item">
-                    <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/ricefield.png"
-                            alt=""></div>
+                    <div class="column-img"><img src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/ricefield.png" alt=""></div>
                     <p class="column-title">東御という土地を選んだ理由</p>
                     <p class="column-description">
                         湯の丸高原へ向かう新張地区の道から見上げる烏帽子岳から湯ノ丸山、浅間山までのその風景に感動し、直感的に「ここでぶどうを作る！」ことを決意しました。東御市は、日照時間が長く日当たりが良い。乾いた風が常に吹き、雨が降っても枝葉が短時間で乾くため病原菌も発生しにくく、葡萄栽培に最適な地域と言えます。
@@ -146,9 +228,7 @@
                 </div>
 
                 <div class="column-item">
-                    <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/red_grapes.png"
-                            alt=""></div>
+                    <div class="column-img"><img src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/red_grapes.png" alt=""></div>
                     <p class="column-title">農薬節減栽培から本来の味へ</p>
                     <p class="column-description">
                         農薬節減栽培は、土壌微生物と菌根菌の増加を促し、土壌環境を保全し、土壌環境にもとから備わっている栄養分を引き出すことが期待できます。
@@ -156,9 +236,7 @@
                 </div>
 
                 <div class="column-item">
-                    <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/landscape.png"
-                            alt=""></div>
+                    <div class="column-img"><img src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/landscape.png" alt=""></div>
                     <p class="column-title">土地のポテンシャルを引き出す</p>
                     <p class="column-description">
                         東御市の気候や土壌の特性を活かし、それぞれの環境が最大限に力を発揮することで、最高品質のぶどうができると確信しています。
@@ -183,8 +261,7 @@
             <div class="horizontal-container">
 
                 <div class="column-item">
-                    <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/garden.png" alt="">
+                    <div class="column-img"><img src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/garden.png" alt="">
                     </div>
                     <p class="column-title">自然循環農法がもたらす事</p>
                     <p class="column-description">
@@ -193,8 +270,7 @@
                 </div>
 
                 <div class="column-item">
-                    <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/person.png" alt="">
+                    <div class="column-img"><img src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/person.png" alt="">
                     </div>
                     <p class="column-title">
                         安全って？安心って？<br>
@@ -206,8 +282,7 @@
                 </div>
 
                 <div class="column-item">
-                    <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/soil.png" alt="">
+                    <div class="column-img"><img src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/soil.png" alt="">
                     </div>
                     <p class="column-title">土壌を育てる</p>
                     <p class="column-description">
@@ -240,9 +315,7 @@
                     </div>
                 </div>
                 <div class='custom-item-column'>
-                    <div class="column-img"><img
-                            src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/grapes_with_person.png"
-                            alt="">
+                    <div class="column-img"><img src="<?php echo get_template_directory_uri(); ?>/release/image/section_4/grapes_with_person.png" alt="">
                     </div>
                 </div>
             </div>
