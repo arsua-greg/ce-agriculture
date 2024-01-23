@@ -4,13 +4,21 @@
     padding-top: 45px;
   }
   .c-btn {
-    p{
+    p {
       color: white;
     }
   }
   .second2-1 {
     padding-bottom: 150px;
     display: flex;
+
+  .img-box{
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
     &:first-child {
       @include is-max($breakpoint-max-tab) {
@@ -92,7 +100,7 @@
         font-family: $font-family-serif;
         padding-bottom: 16px;
         @include is-max($breakpoint-sp) {
-          @include font-line(30px,40px);
+          @include font-line(30px, 40px);
           padding: 18px 0px 6px 0px;
         }
       }
@@ -130,7 +138,6 @@
       .prgrph1 {
         padding-bottom: 38px;
       }
-      
     }
     .db {
       padding-left: 45px;

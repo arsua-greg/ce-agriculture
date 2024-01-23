@@ -77,17 +77,13 @@
                 </a>
             </div>
             <div class="img-box">
-                <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/section2/01.png" alt="">
-                </div>
+                <img src="<?php echo get_template_directory_uri(); ?>/release/image/section2/01.png" alt="">
             </div>
         </div>
 
         <div class="second2-1">
             <div class="img-box">
-                <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/section2/02.png" alt="">
-                </div>
+                <img src="<?php echo get_template_directory_uri(); ?>/release/image/section2/02.png" alt="">
             </div>
             <div class="datail-box db">
                 <h2>化学肥料は不使用</h2>
