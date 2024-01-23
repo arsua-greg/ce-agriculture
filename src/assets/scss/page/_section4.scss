@@ -1,10 +1,19 @@
 .sect_4 {
   padding-top: 150px;
+
   .l-wrap {
+    &:nth-child(2){
+      @include is-sp{
+        display: none;
+      }
+    }
     .sectionCommitment {
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include is-sp{
+        padding-bottom: 15px;
+      }
       .commitment {
         @include font-line(40px);
         font-weight: 500;
@@ -23,10 +32,23 @@
       justify-content: space-between;
       margin: 0 25px;
       padding-top: 25px;
+      @include is-max($breakpoint-pc) {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding-top: 0;
+      }
       .column-item {
         width: calc(100% / 3);
         padding: 0 25px;
+        @include is-max($breakpoint-pc) {
+          width: calc(100%);
+          padding: 0;
+        }
         .column-img {
+          // @include is-sp{
+          //   padding-top: 38px;
+          // }
         }
         .column-title {
           font-family: $font-family-serif;
@@ -34,11 +56,18 @@
           @include font-line(25px);
           text-align: center;
           font-weight: 400;
+          @include is-sp{
+            @include font-line(20px,30px);
+            padding: 16px 0;
+          }
         }
         .column-description {
           font-family: $font-family-base;
           font-weight: 300;
           @include font-line(16px, 30px);
+          @include is-sp{
+            padding-bottom: 30px;
+          }
         }
       }
     }
@@ -49,6 +78,11 @@
       align-items: center;
       margin-top: 50px;
       padding-bottom: 150px;
+      @include is-sp{
+        margin-top:30px;
+        padding-bottom: 39px;
+      }
+     
       .c-btn {
         max-width: 200px;
       }
@@ -56,6 +90,10 @@
     .anchorTagBtn1 {
       display: flex;
       justify-content: center;
+      @include is-max($breakpoint-pc) {
+        padding-top: 69px;
+        padding-bottom: 39px;
+      }
       align-items: center;
       padding-top: 93px;
       .c-btn {
@@ -66,17 +104,36 @@
 
   .l-wrap-2 {
     padding: 150px 0;
+    @include is-max($breakpoint-pc) {
+      padding: 0;
+    }
     .custom-flex-container {
       display: flex;
       padding-left: 50px;
+      @include is-max($breakpoint-pc) {
+        flex-direction: column-reverse;
+        padding-left: 0;
+      }
       .custom-item-column {
         &:first-child {
           width: calc(100% - 60% + 50px);
           padding-right: 50px;
+          @include is-max($breakpoint-pc) {
+            width: calc(100%);
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+          }
         }
         &:last-child {
           @include is-min($breakpoint-max-tab) {
             width: 60%;
+          }
+        }
+        .column-img{
+          @include is-max($breakpoint-max-tab) {
+            padding-bottom: 26px;
           }
         }
 
@@ -85,6 +142,10 @@
           font-family: $font-family-serif;
           font-weight: 600;
           margin: 35px 0 25px 0;
+          @include is-max($breakpoint-pc) {
+            @include font-line(20px, 30px);
+            margin: 25px 0 15px 0;
+          }
         }
         .answer {
           @include font-line(16px, 32px);
@@ -97,18 +158,32 @@
           @include font-line(25px, 40px);
           font-family: $font-family-serif;
           font-weight: 600;
+          @include is-max($breakpoint-pc) {
+            @include font-line(20px, 30px);
+            font-weight: 500;
+          }
         }
         .text-industry {
           @include font-line(16px, 32px);
           font-family: $font-family-base;
           font-weight: 300;
           margin-top: 25px;
+          @include is-max($breakpoint-pc) {
+            @include font-line(16px, 32px);
+            margin-top: 20px;
+          }
         }
         .anchorTagBtn2 {
+          display: flex;
           justify-content: center;
           align-items: center;
           margin-top: 45px;
           padding-bottom: 150px;
+          width: 100%;
+          @include is-max($breakpoint-pc) {
+            margin-top: 30px;
+            padding-bottom: 45px;
+          }
           .c-btn {
             max-width: 200px;
           }

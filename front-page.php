@@ -134,8 +134,8 @@
     <section class="sect_4">
         <div class="l-wrap">
             <div class="sectionCommitment">
-                <h2 class='commitment'> こだわり</h2>
-                <p class='particular'>Particular </p>
+                <h2 class="title-main"> こだわり</h2>
+                <p class="sub-title">Particular </p>
             </div>
 
             <div class="horizontal-container">
