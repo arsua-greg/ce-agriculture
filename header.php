@@ -41,27 +41,29 @@
                         <li class="link-list__item"><a href="">取り組み</a></li>
                         <li class="link-list__item"><a href="">商 品</a></li>
                     </ul>
-                    <div class="nav-sp">
-                        <div class="page__header--hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <div class="header--hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <div class="nav-sp">
+                            <nav class="header sp-only">
+                                <ul class="link-list">
+                                    <li class="link-list__item">こもだ果樹園について</li>
+                                    <li class="link-list__item">自然循環栽培法</li>
+                                    <li class="link-list__item">こだわり</li>
+                                    <li class="link-list__item">取り組み</li>
+                                    <li class="link-list__item">SDGs</li>
+                                    <li class="link-list__item">商 品</li>
+                                    <li>
+                                        <a class="c-btn" href="">
+                                            <p>Online Shop</p>
+                                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="Online Shop Button">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                        <nav class="header sp-only">
-                            <ul class="link-list" style="display: none;">
-                                <li class="link-list__item">こもだ果樹園について</li>
-                                <li class="link-list__item">自然循環栽培法</li>
-                                <li class="link-list__item">こだわり</li>
-                                <li class="link-list__item">取り組み</li>
-                                <li class="link-list__item">SDGs</li>
-                                <li class="link-list__item">商 品</li>
-                                <li><a href="">
-                                        <p>Online Shop</p>
-                                        <img src="" alt="Online Shop Button">
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </nav>
             </header>
