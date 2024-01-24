@@ -1,4 +1,4 @@
-        <div class="page__footer">
+        <div class="page__footer" id="certification">
             <footer>
                 <div class="footer-container">
                     <div class="footer-title">
@@ -33,8 +33,32 @@
                 <div class="footer-banner">
                     <div class="footer-banner__overlay">
                         <div class="overlay"></div>
+                        <div class="text-overlay">
+                            <p class="text">オンラインショップ</p>
+                            <button type="button" class="c-btn">
+                                <p>Online Shop</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                     <img class="divider" src="<?php echo get_template_directory_uri(); ?>/release/image/footer/footer_divider.png" alt="">
+                </div>
+                <div class="footer_links">
+                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/release/image/footer/footer_logo.svg" alt="">
+                    <div class="footer_links--social">
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/insta.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/02.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/youtube.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/facebook.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </footer>
         </div>

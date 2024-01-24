@@ -5,6 +5,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 90px;
+  @include is-sp {
+    margin-top: 50px;
+  }
 
   @include is-sp {
     background-image: url("../image/banner/banner_sp.png");

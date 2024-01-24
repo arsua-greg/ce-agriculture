@@ -12,7 +12,7 @@
             </button>
         </div>
     </div>
-    <section class="sect_1">
+    <section class="sect_1" id="orchard">
         <div class="l-wrap">
             <div class="text-center">
                 <h2 class="title-main">こもだ果樹園</h2>
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section class="sect_2">
+    <section class="sect_2" id="circulation">
         <div class="second2-1 column-reverse">
             <div class="datail-box">
                 <h2>自然循環栽培法</h2>
@@ -91,7 +91,7 @@
                 <h3 class="about-head abth1">信州の環境にやさしい農産物について</h3>
                 <p class="paragraph1">
                     化学肥料及び化学合成農薬について、「地域慣行施肥量」及び「地区農薬使用回数」の50％以上を削減(認証区分：50-50)した方法で栽培された農産物を認証する制度。詳しくはこちらをご覧ください。</p>
-                <a class="c-btn" href="">
+                <a class="c-btn" href="/#certification">
                     <p>長野県認証</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                 </a>
@@ -119,6 +119,7 @@
             </div>
         </div>
     </section>
+    <div id="products"></div>
     <section class="sect_3">
         <div class="l-wrap">
             <div class="sect_3__title">
@@ -212,7 +213,7 @@
             <?php endforeach; ?>
         </div>
     </section>
-    <section class="sect_4">
+    <section class="sect_4" id="commitment">
         <div class="l-wrap">
             <div class="sectionCommitment">
                 <h2 class="title-main"> こだわり</h2>
@@ -246,7 +247,7 @@
                 </div>
             </div>
 
-            <div class="anchorTagBtn">
+            <div class="anchorTagBtn" id="attempt">
                 <a class="c-btn" href="">
                     <p>詳しくはこちら</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
@@ -256,7 +257,7 @@
         <!--  Second Element -->
         <div class="l-wrap">
             <div class="sectionCommitment">
-                <h2 class='commitment'> 取り組み</h2>
+                <h2 class='commitment'>取り組み</h2>
                 <p class='particular'>Particular </p>
             </div>
 

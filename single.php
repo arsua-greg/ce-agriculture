@@ -14,7 +14,7 @@ while (have_posts()) : the_post(); ?>
                 <?php echo the_title(); ?>
             </div>
             <p class="post_content--date"><?php echo the_date("Y.m.d"); ?></p>
-            <p class="post_content--content"><?php echo the_content(); ?></p>
+            <div class="post_content--content"><?php echo the_content(); ?></div>
         </div>
     </div>
 <?php endwhile; ?>

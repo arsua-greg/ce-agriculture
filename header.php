@@ -32,14 +32,14 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/logo.png" alt="Logo"></a>
                     </div>
                     <ul class="pc-only link-list">
-                        <li class="link-list__item"><a href="">こもだ果樹園について</a></li>
-                        <li class="link-list__item"><a href="">自然循環栽培法</a></li>
-                        <li class="link-list__item"><a href="">こだわり</a></li>
+                        <li class="link-list__item"><a href="/#orchard">こもだ果樹園について</a></li>
+                        <li class="link-list__item"><a href="/#circulation">自然循環栽培法</a></li>
+                        <li class="link-list__item"><a href="/#commitment">こだわり</a></li>
                         <!-- <span>
                             <li class="link-list__item"><a href="">SDGs</a></li>
                         </span> -->
-                        <li class="link-list__item"><a href="">取り組み</a></li>
-                        <li class="link-list__item"><a href="">商 品</a></li>
+                        <li class="link-list__item"><a href="/#attempt">取り組み</a></li>
+                        <li class="link-list__item"><a href="/#products">商 品</a></li>
                     </ul>
                     <div class="header--hamburger" onclick="toggleMenu()">
                         <span></span>
@@ -49,12 +49,12 @@
                         <div class="nav-sp">
                             <nav class="header sp-only">
                                 <ul class="link-list">
-                                    <li class="link-list__item">こもだ果樹園について</li>
-                                    <li class="link-list__item">自然循環栽培法</li>
-                                    <li class="link-list__item">こだわり</li>
-                                    <li class="link-list__item">取り組み</li>
-                                    <li class="link-list__item">SDGs</li>
-                                    <li class="link-list__item">商 品</li>
+                                    <li class="link-list__item"><a href="">こもだ果樹園について</a></li>
+                                    <li class="link-list__item"><a href="">自然循環栽培法</a></li>
+                                    <li class="link-list__item"><a href="">こだわり</a></li>
+                                    <li class="link-list__item"><a href="">取り組み</a></li>
+                                    <li class="link-list__item"><a href="">SDGs</a></li>
+                                    <li class="link-list__item"><a href="">商 品</a></li>
                                     <li>
                                         <a class="c-btn" href="">
                                             <p>Online Shop</p>

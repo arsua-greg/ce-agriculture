@@ -1,68 +1,69 @@
-@import '_variable.scss';
+@import "_variable.scss";
 
 * {
-    // remove all padding and margin
-    padding: 0;
-    margin: 0;
-    // user for push the last div (footer) bottom
-    // height: 100%;
+  // remove all padding and margin
+  padding: 0;
+  margin: 0;
+  // user for push the last div (footer) bottom
+  // height: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font-family: $font-family-base;
-    font-weight: $font-weight-base;
-    line-height: $line-height-base;
-    color: $color-text-default;
-    font-size: $font-size-base;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    word-wrap: break-word;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $color-text-default;
+  font-size: $font-size-base;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 ul,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a:hover,
 a:visited,
 a:link,
 a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 [tabindex="-1"]:focus {
-    outline: 0 !important;
+  outline: 0 !important;
 }
 
 [data-layout="wide"] {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 img {
-    vertical-align: middle;
-    border-style: none; // Remove the border on images inside links in IE 10-.
-    max-width: 100%;
-    max-height: 100%;
+  vertical-align: middle;
+  border-style: none; // Remove the border on images inside links in IE 10-.
+  max-width: 100%;
+  max-height: 100%;
 }
 
 svg {
-    // Workaround for the SVG overflow bug in IE10/11 is still required.
-    // See https://github.com/twbs/bootstrap/issues/26878
-    overflow: hidden;
-    vertical-align: middle;
+  // Workaround for the SVG overflow bug in IE10/11 is still required.
+  // See https://github.com/twbs/bootstrap/issues/26878
+  overflow: hidden;
+  vertical-align: middle;
 }
 
 button,
@@ -70,57 +71,56 @@ button,
 // 1
 [type="reset"],
 [type="submit"] {
-    -webkit-appearance: button; // 2
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-
+  -webkit-appearance: button; // 2
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 button,
 input[type="submit"],
 input[type="reset"] {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 textarea {
-    overflow: auto; // Remove the default vertical scrollbar in IE.
-    // Textareas should really only resize vertically so they don't break their (horizontal) containers.
-    resize: vertical;
+  overflow: auto; // Remove the default vertical scrollbar in IE.
+  // Textareas should really only resize vertically so they don't break their (horizontal) containers.
+  resize: vertical;
 }
 
 textarea:focus,
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 progress {
-    vertical-align: baseline; // Add the correct vertical alignment in Chrome, Firefox, and Opera.
+  vertical-align: baseline; // Add the correct vertical alignment in Chrome, Firefox, and Opera.
 }
 
 // Correct the cursor style of increment and decrement buttons in Chrome.
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-    height: auto;
+  height: auto;
 }
 
 [type="search"] {
-    // This overrides the extra rounded corners on search inputs in iOS so that our
-    // `.form-control` class can properly style them. Note that this cannot simply
-    // be added to `.form-control` as it's not specific enough. For details, see
-    // https://github.com/twbs/bootstrap/issues/11586.
-    outline-offset: -2px; // 2. Correct the outline style in Safari.
-    -webkit-appearance: none;
+  // This overrides the extra rounded corners on search inputs in iOS so that our
+  // `.form-control` class can properly style them. Note that this cannot simply
+  // be added to `.form-control` as it's not specific enough. For details, see
+  // https://github.com/twbs/bootstrap/issues/11586.
+  outline-offset: -2px; // 2. Correct the outline style in Safari.
+  -webkit-appearance: none;
 }
 
 //
@@ -128,7 +128,7 @@ progress {
 //
 
 [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 //
@@ -137,8 +137,8 @@ progress {
 //
 
 ::-webkit-file-upload-button {
-    font: inherit; // 2
-    -webkit-appearance: button; // 1
+  font: inherit; // 2
+  -webkit-appearance: button; // 1
 }
 
 //
@@ -146,20 +146,20 @@ progress {
 //
 
 output {
-    display: inline-block;
+  display: inline-block;
 }
 
 summary {
-    display: list-item; // Add the correct display in all browsers
-    cursor: pointer;
+  display: list-item; // Add the correct display in all browsers
+  cursor: pointer;
 }
 
 template {
-    display: none; // Add the correct display in IE
+  display: none; // Add the correct display in IE
 }
 
 // Always hide an element with the `hidden` HTML attribute (from PureCSS).
 // Needed for proper display in IE 10-.
 [hidden] {
-    display: none !important;
+  display: none !important;
 }

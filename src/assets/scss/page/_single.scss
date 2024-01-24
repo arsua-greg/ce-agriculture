@@ -1,22 +1,54 @@
 .page {
   &__single {
-    padding: 50px 0;
+    padding: 90px 0 0;
+  }
+}
+
+.post_content {
+  padding: 50px 0 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  @include is-sp {
+    padding: 0 20px 40px;
   }
 
-  .post_content {
-    &--title {
-      @include font-line(30px, 32px);
-      font-family: $font-family-serif;
-      font-weight: 300;
+  &--img {
+    img {
+      display: block;
+      margin: 0 auto;
     }
-    &--date {
-      @include font-line(18px, 22px);
-      font-family: $font-family-en;
-      font-weight: 400;
+  }
+
+  &--title {
+    @include font-line(30px, 32px);
+    font-family: $font-family-serif;
+    font-weight: 300;
+    padding: 25px 0 45px;
+    @include is-sp {
+      @include font-line(20px);
+      padding: 15px 0 25px;
     }
-    &--content {
+  }
+  &--date {
+    @include font-line(18px, 22px);
+    color: $color-sub;
+    font-family: $font-family-en;
+    font-weight: 400;
+  }
+  &--content {
+    padding: 50px 0 0 0;
+    @include is-sp {
+      padding: 25px 0 0 0;
+    }
+    p {
       @include font-line(16px, 32px);
       font-weight: 300;
+    }
+    img {
+      margin: 35px auto;
+      max-width: 600px;
+      width: 100%;
+      display: block;
     }
   }
 }

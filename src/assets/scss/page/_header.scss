@@ -2,11 +2,16 @@
   background-color: #000;
   color: #fff;
   border-bottom: 1px solid #d29500;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @include is-max($breakpoint-max-tab) {
       padding: 0 20px 0 0;
     }
@@ -21,13 +26,26 @@
 
     .link-list {
       &__item {
+        @include is-sp {
+          @include font-line(18px, 26px);
+          font-weight: 400;
+          &:not(:last-child) {
+            margin-bottom: 40px;
+          }
+        }
         a {
           @include font-line(15px, 21px);
           color: #fff;
           font-family: $font-family-base;
           font-weight: 400;
-          padding-right: 50px;
+          @include is-min($breakpoint-max-tab) {
+            padding-right: 50px;
+          }
         }
+      }
+
+      .c-btn {
+        margin: 0 auto;
       }
     }
 
@@ -43,12 +61,14 @@
 
           &:first-child {
             transform: rotate(45deg);
+            top: 2px;
+            position: relative;
           }
           &:nth-child(2) {
             display: none;
           }
           &:nth-child(3) {
-            transform: rotate(-46deg);
+            transform: rotate(-45deg);
             margin-top: unset;
           }
         }
@@ -56,11 +76,11 @@
       span {
         display: block;
         width: 18px;
-        height: 1px;
+        height: 2px;
         background-color: #fff;
         transition: 0.3s ease-in-out;
         &:not(:first-child) {
-          margin-top: 5px;
+          margin-top: 3px;
         }
       }
 
@@ -70,12 +90,16 @@
           display: none;
         }
 
+        .header {
+          padding: 0;
+        }
+
         &.isOpen {
           text-align: center;
           display: block;
           position: fixed;
           z-index: 2;
-          top: 0;
+          top: 55px;
           left: 0;
           width: 100%;
           height: 100%;
@@ -83,7 +107,7 @@
 
           .header {
             justify-content: center;
-            padding-top: 70px;
+            padding-top: 45px;
           }
         }
       }
