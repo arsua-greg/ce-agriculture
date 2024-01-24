@@ -68,6 +68,250 @@
   }
 }
 .sect_2 {
+  padding-top: 150px;
+  @include is-max($breakpoint-max-tab) {
+    padding-top: 45px;
+  }
+  .c-btn {
+    p {
+      color: white;
+    }
+  }
+  .second2-1 {
+    padding-bottom: 150px;
+    display: flex;
+
+    .img-box {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &:first-child {
+      @include is-max($breakpoint-max-tab) {
+        padding-bottom: 45px;
+        flex-direction: column-reverse;
+        .datail-box {
+          h2 {
+            padding-top: 20px;
+            text-align: center;
+          }
+          .text1 {
+            text-align: center;
+          }
+          .c-btn {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .datail-box {
+        .c-btn {
+          margin-left: auto;
+        }
+        @include is-max($breakpoint-max-tab) {
+          width: 100%;
+          padding: 0 20px;
+        }
+      }
+      @include is-max($breakpoint-sp) {
+        .datail-box {
+          h2 {
+            @include font-line(30px);
+          }
+          .text1 {
+            @include font-line(15px);
+            padding-bottom: 15px;
+          }
+          .prgrph1 {
+            padding-bottom: 31px;
+          }
+        }
+      }
+      @include is-max($breakpoint-max-tab) {
+        padding-bottom: 45px;
+        .datail-box {
+          h2 {
+            padding-top: 20px;
+            text-align: center;
+          }
+          h3 {
+            text-align: center;
+          }
+          .text1 {
+            text-align: center;
+          }
+          .c-btn {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    @include is-max($breakpoint-max-tab) {
+      flex-direction: column;
+    }
+
+    .datail-box {
+      width: 40%;
+      @include is-max($breakpoint-max-tab) {
+        width: 100%;
+        padding: 0 20px;
+      }
+      padding-left: 50px;
+      padding-right: 45px;
+
+      h2 {
+        @include font-line(40px, 40px);
+        font-weight: 500;
+        font-family: $font-family-serif;
+        padding-bottom: 16px;
+        @include is-max($breakpoint-sp) {
+          @include font-line(30px, 40px);
+          padding: 18px 0px 6px 0px;
+        }
+      }
+
+      .about-head {
+        @include font-line(25px, 40px);
+        font-family: $font-family-serif;
+        font-weight: 600;
+        padding-bottom: 26px;
+        @include is-max($breakpoint-sp) {
+          @include font-line(20px, 30px);
+          font-weight: 500;
+          padding: 0px 0px 16px 0px;
+        }
+      }
+
+      .text1 {
+        font-family: $font-family-en;
+        @include font-line(18px, 22px);
+        font-weight: 400;
+        padding-bottom: 35px;
+        color: $color-sub;
+        @include is-max($breakpoint-sp) {
+          @include font-line(15px, 19px);
+          padding: 0px 0px 15px 0px;
+        }
+      }
+
+      .paragraph1 {
+        @include font-line(16px, 32px);
+        font-weight: 300;
+        font-family: $font-family-base;
+        padding-bottom: 30px;
+      }
+      .prgrph1 {
+        padding-bottom: 38px;
+      }
+    }
+    .db {
+      padding-left: 45px;
+      padding-right: 50px;
+    }
+    .c-btn {
+      max-width: 200px;
+    }
+
+    .img-box {
+      width: 60%;
+      @include is-max($breakpoint-max-tab) {
+        width: 100%;
+      }
+    }
+  }
+
+  .second2-3 {
+    .l-wrap {
+      display: flex;
+      @include is-max($breakpoint-max-tab) {
+        padding: 0 20px;
+      }
+      @include is-max($breakpoint-max-tab) {
+        padding-bottom: 45px;
+        flex-direction: column-reverse;
+        .datail-box {
+          h2 {
+            padding-top: 20px;
+            text-align: center;
+          }
+          .text1 {
+            text-align: center;
+          }
+          .c-btn {
+            margin: 0 auto;
+          }
+        }
+      }
+
+      .datail-box {
+        @include is-min($breakpoint-sp) {
+          width: 60%;
+        }
+        @include is-max($breakpoint-max-tab) {
+          width: 100%;
+          padding: 50px 0px 0px 0px;
+        }
+        padding-right: 45px;
+
+        h2 {
+          @include is-max($breakpoint-max-tab) {
+            padding-bottom: 6px;
+          }
+          @include font-line(40px, 40px);
+          font-weight: 500;
+          font-family: $font-family-serif;
+          padding-bottom: 16px;
+          @include is-max($breakpoint-sp) {
+            @include font-line(30px, 40px);
+            padding: 0px 0px 6px 0px;
+          }
+        }
+        .text1 {
+          @include is-max($breakpoint-max-tab) {
+            padding-bottom: 15px;
+          }
+          @include is-max($breakpoint-sp) {
+            @include font-line(15px, 19px);
+          }
+          font-family: $font-family-en;
+          @include font-line(18px, 22px);
+          font-weight: 400;
+          padding-bottom: 35px;
+          color: $color-sub;
+        }
+
+        .paragraph1 {
+          @include font-line(16px, 32px);
+          font-weight: 300;
+          font-family: $font-family-base;
+          padding-bottom: 30px;
+        }
+      }
+
+      .img-box {
+        @include is-min($breakpoint-max-tab) {
+          width: 40%;
+        }
+
+        .signature {
+          padding-top: 15px;
+          width: 300px;
+          margin-left: auto;
+          display: block;
+          @include is-max($breakpoint-max-tab) {
+            margin: 0 auto;
+          }
+          @include is-max($breakpoint-sp) {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
 }
 .sect_3 {
   &__title {
@@ -204,4 +448,194 @@
   }
 }
 .sect_4 {
+  padding-top: 150px;
+
+  .l-wrap {
+    &:nth-child(2) {
+      @include is-sp {
+        display: none;
+      }
+    }
+    .sectionCommitment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include is-sp {
+        padding-bottom: 48px;
+        padding-bottom: 15px;
+      }
+      .commitment {
+        @include font-line(40px);
+        font-weight: 500;
+        font-family: $font-family-serif;
+      }
+      .particular {
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: $color-sub;
+        padding-top: 16px;
+      }
+    }
+
+    .horizontal-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 -25px;
+      padding-top: 25px;
+      @include is-max($breakpoint-pc) {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding-top: 0;
+      }
+      .column-item {
+        width: calc(100% / 3);
+        padding: 0 25px;
+        @include is-max($breakpoint-pc) {
+          width: calc(100%);
+          padding: 0;
+        }
+        .column-img {
+        }
+        .column-title {
+          font-family: $font-family-serif;
+          padding: 26px 0;
+          @include font-line(25px);
+          text-align: center;
+          font-weight: 400;
+          @include is-sp {
+            @include font-line(20px, 30px);
+            padding: 16px 0;
+          }
+        }
+        .column-description {
+          font-family: $font-family-base;
+          font-weight: 300;
+          @include font-line(16px, 30px);
+          @include is-sp {
+            padding-bottom: 30px;
+          }
+        }
+      }
+    }
+
+    .anchorTagBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      padding-bottom: 150px;
+      @include is-sp {
+        margin-top: 30px;
+        padding-bottom: 39px;
+      }
+
+      .c-btn {
+        max-width: 200px;
+      }
+    }
+    .anchorTagBtn1 {
+      display: flex;
+      justify-content: center;
+      @include is-max($breakpoint-pc) {
+        padding-top: 69px;
+        padding-bottom: 39px;
+      }
+      align-items: center;
+      padding-top: 93px;
+      .c-btn {
+        max-width: 200px;
+      }
+    }
+  }
+
+  .l-wrap-2 {
+    padding: 150px 0;
+    @include is-max($breakpoint-pc) {
+      padding: 0;
+    }
+    .custom-flex-container {
+      display: flex;
+      padding-left: 50px;
+      @include is-max($breakpoint-pc) {
+        flex-direction: column-reverse;
+        padding-left: 0;
+      }
+      .custom-item-column {
+        &:first-child {
+          width: calc(100% - 60% + 50px);
+          padding-right: 50px;
+          @include is-max($breakpoint-pc) {
+            width: calc(100%);
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+          }
+        }
+        &:last-child {
+          @include is-min($breakpoint-max-tab) {
+            width: 60%;
+          }
+        }
+        .column-img {
+          @include is-max($breakpoint-max-tab) {
+            padding-bottom: 26px;
+          }
+        }
+
+        .question {
+          @include font-line(25px, 40px);
+          font-family: $font-family-serif;
+          font-weight: 600;
+          margin: 35px 0 25px 0;
+          @include is-max($breakpoint-pc) {
+            @include font-line(20px, 30px);
+            margin: 25px 0 15px 0;
+          }
+        }
+        .answer {
+          @include font-line(16px, 32px);
+          font-family: $font-family-base;
+          font-weight: 300;
+          margin-bottom: 20px;
+          letter-spacing: 1.6px;
+        }
+        .text-cultivation {
+          @include font-line(25px, 40px);
+          font-family: $font-family-serif;
+          font-weight: 600;
+          @include is-max($breakpoint-pc) {
+            @include font-line(20px, 30px);
+            font-weight: 500;
+          }
+        }
+        .text-industry {
+          @include font-line(16px, 32px);
+          font-family: $font-family-base;
+          font-weight: 300;
+          margin-top: 25px;
+          @include is-max($breakpoint-pc) {
+            @include font-line(16px, 32px);
+            margin-top: 20px;
+          }
+        }
+        .anchorTagBtn2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 45px;
+          padding-bottom: 150px;
+          width: 100%;
+          @include is-max($breakpoint-pc) {
+            margin-top: 30px;
+            padding-bottom: 45px;
+          }
+          .c-btn {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
 }
