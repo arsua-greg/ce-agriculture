@@ -6,13 +6,13 @@
                 <h1 class="banner__float--title">糖度・香り高く<br />味わい深い</h1>
                 <p class="banner__float--desc">東御の自然の恵をいっぱいに<br />浴びたぶどうをお届します</p>
             </div>
-            <button type="button" class="c-btn">
+            <button type="button" class="c-btn" id="orchard">
                 <p>Online Shop</p>
                 <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
             </button>
         </div>
     </div>
-    <section class="sect_1" id="orchard">
+    <section class="sect_1">
         <div class="l-wrap">
             <div class="text-center">
                 <h2 class="title-main">こもだ果樹園</h2>
