@@ -116,6 +116,19 @@
         width: calc(100% / 2);
       }
 
+      &__bg {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 50%;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        max-width: 400px;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+      }
+
       &__float {
         background-color: rgba(0, 0, 0, 0.5);
         color: #fff;
@@ -127,14 +140,17 @@
         text-align: center;
         padding: 30px 0;
         width: 100%;
+        cursor: pointer;
 
-        @include is-sp {
+        @include is-max(480px) {
           left: 25px;
           right: 25px;
           transform: translate(0%, -50%);
           width: auto;
         }
+      }
 
+      &__text-container {
         & > * {
           &:not(:first-child) {
             margin-bottom: 16px;

@@ -198,13 +198,15 @@
                 <div class="product-item">
                     <img src="<?= get_template_directory_uri(); ?>/release/image/section_3/<?= $product["image"]; ?>" alt="">
                     <div class="product-item__float">
-                        <p class="product-item__title"><?= $product["title"]; ?></p>
-                        <p class="product-item__jp-name"><?= $product["jp_name"]; ?></p>
-                        <p class="product-item__catchphrase"><?= $product["catchphrase"]; ?></p>
-                        <button type="button" class="c-btn product-item__btn">
-                            <p>Online Shop</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
-                        </button>
+                        <div class="product-item__text-container">
+                            <p class="product-item__title"><?= $product["title"]; ?></p>
+                            <p class="product-item__jp-name"><?= $product["jp_name"]; ?></p>
+                            <p class="product-item__catchphrase"><?= $product["catchphrase"]; ?></p>
+                            <button type="button" class="c-btn product-item__btn">
+                                <p>Online Shop</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>
