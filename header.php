@@ -34,10 +34,12 @@
                     <ul class="pc-only link-list">
                         <li class="link-list__item"><a href="/#orchard">こもだ果樹園について</a></li>
                         <li class="link-list__item"><a href="/#circulation">自然循環栽培法</a></li>
-                        <li class="link-list__item"><a href="/#commitment">こだわり</a></li>
-                        <!-- <span>
-                            <li class="link-list__item"><a href="">SDGs</a></li>
-                        </span> -->
+                        <li class="link-list__item">
+                            <a href="/#commitment">こだわり</a>
+                            <div class="dropdown-item">
+                                <a href="">SDGs</a>
+                            </div>
+                        </li>
                         <li class="link-list__item"><a href="/#attempt">取り組み</a></li>
                         <li class="link-list__item"><a href="/#products">商 品</a></li>
                     </ul>
@@ -45,16 +47,15 @@
                         <span></span>
                         <span></span>
                         <span></span>
-
                         <div class="nav-sp">
                             <nav class="header sp-only">
                                 <ul class="link-list">
-                                    <li class="link-list__item"><a href="">こもだ果樹園について</a></li>
-                                    <li class="link-list__item"><a href="">自然循環栽培法</a></li>
-                                    <li class="link-list__item"><a href="">こだわり</a></li>
-                                    <li class="link-list__item"><a href="">取り組み</a></li>
+                                    <li class="link-list__item"><a href="/#orchard">こもだ果樹園について</a></li>
+                                    <li class="link-list__item"><a href="/#circulation">自然循環栽培法</a></li>
+                                    <li class="link-list__item"><a href="/#commitment">こだわり</a></li>
+                                    <li class="link-list__item"><a href="/#attempt">取り組み</a></li>
                                     <li class="link-list__item"><a href="">SDGs</a></li>
-                                    <li class="link-list__item"><a href="">商 品</a></li>
+                                    <li class="link-list__item"><a href="/#products">商 品</a></li>
                                     <li>
                                         <a class="c-btn" href="">
                                             <p>Online Shop</p>

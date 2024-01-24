@@ -26,6 +26,14 @@
 
     .link-list {
       &__item {
+        position: relative;
+
+        &:hover {
+          .dropdown-item {
+            display: block;
+          }
+        }
+
         @include is-sp {
           @include font-line(18px, 26px);
           font-weight: 400;
@@ -33,11 +41,32 @@
             margin-bottom: 40px;
           }
         }
+
+        .dropdown-item {
+          display: none;
+          position: absolute;
+          z-index: 1;
+          background-color: #000;
+          float: none;
+          top: 50px;
+          left: 0;
+          max-width: 108px;
+          width: 100%;
+          padding: 24px 15px;
+          a {
+            width: 100%;
+            padding: 0;
+            display: block;
+          }
+        }
+
         a {
           @include font-line(15px, 21px);
           color: #fff;
           font-family: $font-family-base;
           font-weight: 400;
+          height: 100%;
+          padding: 34px 0 35px;
           @include is-min($breakpoint-max-tab) {
             padding-right: 50px;
           }
