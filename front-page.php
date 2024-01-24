@@ -149,48 +149,56 @@
                     "title" => "Kyoho",
                     "jp_name" => "巨 峰",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "link" => ""
                 ],
                 [
                     "image" => "sect_3_img_2.png",
                     "title" => "Nagano Purple",
                     "jp_name" => "ナガノパープル",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "link" => ""
                 ],
                 [
                     "image" => "sect_3_img_3.png",
                     "title" => "Shine Masquat",
                     "jp_name" => "シャインマスカット",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "link" => ""
                 ],
                 [
                     "image" => "sect_3_img_4.png",
                     "title" => "Queen Rouge",
                     "jp_name" => "クイーンルージュ",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "link" => ""
                 ],
                 [
                     "image" => "sect_3_img_5.png",
                     "title" => "Queen Nina",
                     "jp_name" => "クイーンニーナ",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "link" => ""
                 ],
                 [
                     "image" => "sect_3_img_6.png",
                     "title" => "Queen Seven",
                     "jp_name" => "クイーンセブン",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "link" => ""
                 ],
                 [
                     "image" => "sect_3_img_7.png",
                     "title" => "Grape Juice",
                     "jp_name" => "ぶどうジュース",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "link" => ""
                 ],
                 [
                     "image" => "sect_3_img_8.png",
                     "title" => "Semi Dry",
                     "jp_name" => "セミドライ",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "link" => ""
                 ],
             ];
 
