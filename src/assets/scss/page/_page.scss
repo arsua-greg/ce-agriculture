@@ -75,6 +75,7 @@
   .c-btn {
     p {
       color: white;
+      font-family: $font-family-serif;
     }
   }
   .second2-1 {
@@ -335,6 +336,9 @@
   &__btn {
     max-width: 200px;
     margin: 0 auto;
+    p {
+      font-family: $font-family-serif;
+    }
 
     img {
       bottom: 0;
@@ -532,6 +536,9 @@
 
       .c-btn {
         max-width: 200px;
+        p {
+          font-family: $font-family-serif;
+        }
       }
     }
     .anchorTagBtn1 {
@@ -545,6 +552,9 @@
       padding-top: 93px;
       .c-btn {
         max-width: 200px;
+        p {
+          font-family: $font-family-serif;
+        }
       }
     }
   }
@@ -633,6 +643,9 @@
           }
           .c-btn {
             max-width: 200px;
+            p {
+              font-family: $font-family-serif;
+            }
           }
         }
       }
