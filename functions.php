@@ -13,3 +13,6 @@ function load_scripts()
     wp_enqueue_script('template-main', get_template_directory_uri() . '/release/js/index.js', '', '', true);
 }
 add_action('wp_enqueue_scripts', 'load_scripts');
+
+
+add_theme_support('post-thumbnails');

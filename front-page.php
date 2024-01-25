@@ -29,12 +29,9 @@
 
                 $the_query = new WP_Query($args);
                 ?>
-
                 <?php if ($the_query->have_posts()) : ?>
-                    <?php while ($the_query->have_posts()) :
-                        $the_query->the_post(); ?>
-                        <a href="<?php echo the_permalink(); ?>" class="blog-item">
-                            <!-- <div class="blog-item"> -->
+                    <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                        <div class="blog-item">
                             <div class="blog-img">
                                 <?php
                                 $featured_img = the_post_thumbnail();
@@ -46,21 +43,21 @@
                                 <?php $categories = get_the_category();
                                 foreach ($categories as $category) : ?>
                                     <p>
-                                        <?php echo $category->name; ?>
+                                        <a href="<?php echo get_category_link($category->term_id); ?>">
+                                            <?php echo $category->name; ?>
+                                        </a>
                                     </p>
                                 <?php endforeach; ?>
                             </div>
                             <p class="title">
-                                <?php echo get_the_title(); ?>
+                                <?php echo the_title(); ?>
                             </p>
-                            <!-- </div> -->
-                        </a>
+                        </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
             </div>
         </div>
     </section>
-
     <section class="sect_2" id="circulation">
         <div class="second2-1 column-reverse">
             <div class="datail-box">
@@ -114,12 +111,11 @@
                 </div>
                 <div class="img-box">
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/section2/03.png" alt="">
-                    <img class="signature" src="<?php echo get_template_directory_uri(); ?>/release/image/section2/04.png" alt="">
+                    <img id="products" class="signature" src="<?php echo get_template_directory_uri(); ?>/release/image/section2/04.png" alt="">
                 </div>
             </div>
         </div>
     </section>
-    <div id="products"></div>
     <section class="sect_3">
         <div class="l-wrap">
             <div class="sect_3__title">
