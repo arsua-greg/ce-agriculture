@@ -52,7 +52,7 @@
                         <a href="https://twitter.com/tomi_komoda" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/02.svg" alt="">
                         </a>
-                        <a href="">
+                        <a href="https://www.youtube.com/channel/UCScttm-KXLJbutyh9wAtRxA">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/youtube.svg" alt="">
                         </a>
                         <a href="https://www.facebook.com/tomikomoda" target="_blank">
