@@ -46,19 +46,22 @@
                 <div class="footer_links">
                     <img class="logo" src="<?php echo get_template_directory_uri(); ?>/release/image/footer/footer_logo.svg" alt="">
                     <div class="footer_links--social">
-                        <a href="">
+                        <a href="https://www.instagram.com/kyoho.jp/" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/insta.svg" alt="">
                         </a>
-                        <a href="">
+                        <a href="https://twitter.com/tomi_komoda" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/02.svg" alt="">
                         </a>
                         <a href="">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/youtube.svg" alt="">
                         </a>
-                        <a href="">
+                        <a href="https://www.facebook.com/tomikomoda" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/facebook.svg" alt="">
                         </a>
                     </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 東御こもだ果樹園</p>
                 </div>
             </footer>
         </div>
