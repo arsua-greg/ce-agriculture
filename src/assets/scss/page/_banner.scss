@@ -41,10 +41,16 @@
   }
 
   &__float {
-    border: 1px solid #d29500;
+    border: 1px solid $color-sub;
     background-color: rgba(255, 255, 255, 0.3);
     width: 100%;
     padding: 23px 0px 25px 70px;
+    @include is-sp {
+      border-top: 1px solid $color-sub;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+    }
 
     @include is-min($breakpoint-sp) {
       max-width: 438px;

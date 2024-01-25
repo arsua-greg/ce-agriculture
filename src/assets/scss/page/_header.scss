@@ -69,6 +69,10 @@
           @include is-min($breakpoint-max-tab) {
             padding-right: 50px;
           }
+
+          &:hover {
+            opacity: 0.6;
+          }
         }
       }
 

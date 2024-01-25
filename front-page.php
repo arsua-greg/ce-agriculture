@@ -33,11 +33,13 @@
                     <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <div class="blog-item">
                             <div class="blog-img">
-                                <?php
-                                $featured_img = the_post_thumbnail();
-                                if ($featured_img == "") : ?>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/release/image/blog_default_img.png" alt="">
-                                <?php endif; ?>
+                                <a href="<?php echo the_permalink(); ?>">
+                                    <?php
+                                    $featured_img = the_post_thumbnail();
+                                    if ($featured_img == "") : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/release/image/blog_default_img.png" alt="">
+                                    <?php endif; ?>
+                                </a>
                             </div>
                             <div class="category">
                                 <?php $categories = get_the_category();
@@ -87,7 +89,7 @@
 
                 <h3 class="about-head abth1">信州の環境にやさしい農産物について</h3>
                 <p class="paragraph1">
-                    化学肥料及び化学合成農薬について、「地域慣行施肥量」及び「地区農薬使用回数」の50％以上を削減(認証区分：50-50)した方法で栽培された農産物を認証する制度。詳しくはこちらをご覧ください。</p>
+                    化学肥料及び化学合成農薬について、「地域慣行施肥量」及び「地区農薬使用回数」の50％以上を削減(認証区分：50-50)した方法で栽培された農産物を認証する制度。詳しくは<a href="https://www.pref.nagano.lg.jp/nogi/sangyo/nogyo/sedo.html" target="_blank">こちら</a>をご覧ください。</p>
                 <a class="c-btn" href="/#certification">
                     <p>長野県認証</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
@@ -125,8 +127,8 @@
             <div class="sect_3__text-content">
                 <p class="sect_3__text-content--text">東御こもだ果樹園では、黒・緑・赤の3 色のぶどうを栽培しています。それぞれの品種には個性がありますが、共通の美味しさの基準は以下のようなものです。<br />
                     ・枝の状態は鮮やかな緑色で、収穫から時間が経っていないものが新鮮です。<br />
-                    ・実の状態は色づきが良く、ブルーム*1 が付いているものが甘くてジューシーです。<br />
-                    ・糖度は18 度以上が高品質とされています*2 。<br />
+                    ・実の状態は色づきが良く、ブルーム<span class="exponent">*1</span> が付いているものが甘くてジューシーです。<br />
+                    ・糖度は18 度以上が高品質とされています<span class="exponent">*2</span> 。<br />
                     これらの基準を満たすぶどうを、信州の環境にやさしい農産物5050（長野県認証）の基準に従って栽培しています。日照時間が長く、昼夜の寒暖差が大きい東御市の南斜面は、ぶどうの甘みと酸味のバランスを引き出す最適な環境となっています。農薬や化学肥料の使用量を減らし、健全な土壌維持と適切な着房制限を行うことにより、味わい深く高品質なぶどうを育てています。ぜひ、東御こもだ果樹園のぶどうをご賞味ください。<br />
 
                     *1 ブルームとは、ぶどうの表面に付いている白い粉のようなもので、ぶどうが自ら分泌する天然の蝋（ろう）物質です。ブルームはぶどうを水分の蒸発や病気から守り、鮮度を保つ役割があります。ブルームは無害で食べても問題ありません。<br />
@@ -260,8 +262,8 @@
         <!--  Second Element -->
         <div class="l-wrap">
             <div class="sectionCommitment">
-                <h2 class='commitment'>取り組み</h2>
-                <p class='particular'>Particular </p>
+                <h2 class='title-main'>取り組み</h2>
+                <p class='sub-title'>Particular </p>
             </div>
 
             <div class="horizontal-container">
@@ -304,7 +306,7 @@
             </div>
         </div>
         <!--  Third Element -->
-        <div class='l-wrap-2'>
+        <div class='l-wrap-2' id="sdg">
             <div class='custom-flex-container'>
                 <div class='custom-item-column'>
                     <h2 class="title-main">SDGS</h2>

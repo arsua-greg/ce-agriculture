@@ -37,7 +37,7 @@
                         <li class="link-list__item">
                             <a href="/#commitment">こだわり</a>
                             <div class="dropdown-item">
-                                <a href="">SDGs</a>
+                                <a href="/#sdg">SDGs</a>
                             </div>
                         </li>
                         <li class="link-list__item"><a href="/#attempt">取り組み</a></li>
