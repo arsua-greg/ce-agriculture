@@ -54,7 +54,7 @@
                                     <li class="link-list__item"><a href="/#circulation">自然循環栽培法</a></li>
                                     <li class="link-list__item"><a href="/#commitment">こだわり</a></li>
                                     <li class="link-list__item"><a href="/#attempt">取り組み</a></li>
-                                    <li class="link-list__item"><a href="">SDGs</a></li>
+                                    <li class="link-list__item"><a href="/#sdg">SDGs</a></li>
                                     <li class="link-list__item"><a href="/#products">商 品</a></li>
                                     <li>
                                         <a class="c-btn" href="">

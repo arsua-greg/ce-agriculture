@@ -67,6 +67,7 @@
       @include font-line(42px, 60px);
       font-family: $font-family-serif;
       font-weight: 500;
+      letter-spacing: 0.05em;
       @include is-sp {
         @include font-line(25px);
         color: #fff;
@@ -78,6 +79,7 @@
       font-family: $font-family-serif;
       font-weight: 500;
       padding-top: 12px;
+      letter-spacing: 0.05em;
       @include is-sp {
         @include font-line(14px);
         color: #fff;
