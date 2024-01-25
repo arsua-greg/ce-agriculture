@@ -25,6 +25,8 @@
     }
 
     .link-list {
+      width: 100%;
+      justify-content: flex-end;
       &__item {
         position: relative;
 
