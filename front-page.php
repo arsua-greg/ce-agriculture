@@ -87,7 +87,7 @@
                 <h2>化学肥料は不使用</h2>
                 <p class="text1">No Chemical</p>
                 <p class="paragraph1 prgrph1">当園自慢のぶどうは、全て信州の環境にやさしい農産物50（長野県認証）認定を受けた、おいしさと安全を追求した逸品です。</p>
-                <h3 class="about-head abth1">信州の環境にやさしい農産物について</h3>
+                <h3 class="about-head abth1">信州の環境にやさしい<br class="sp-only">農産物について</h3>
                 <p class="paragraph1">
                     化学肥料及び化学合成農薬について、「地域慣行施肥量」及び「地区農薬使用回数」の50％以上を削減(認証区分：50-50)した方法で栽培された農産物を認証する制度。詳しくは<a href="https://www.pref.nagano.lg.jp/nogi/sangyo/nogyo/sedo.html" target="_blank">こちら</a>をご覧ください。</p>
                 <a class="c-btn" href="<?php echo home_url(); ?>/#certification">
@@ -203,7 +203,7 @@
             ?>
                 <div class="product-item">
                     <a href="<?= $product["link"]; ?>">
-                        <img src="<?= get_template_directory_uri(); ?>/release/image/section_3/<?= $product["image"]; ?>" alt="">
+                        <img class="product-img" src="<?= get_template_directory_uri(); ?>/release/image/section_3/<?= $product["image"]; ?>" alt="">
                         <div class="product-item__float"></div>
                         <div class="product-item__text-container delete-bg">
                             <p class="product-item__title"><?= $product["title"]; ?></p>

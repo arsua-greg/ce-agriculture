@@ -65,10 +65,6 @@
       width: max-content;
       margin: 15px 0;
 
-      @include is-sp {
-        margin: 15px auto;
-      }
-
       img {
         aspect-ratio: 1;
       }
