@@ -32,16 +32,16 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/logo.png" alt="Logo"></a>
                     </div>
                     <ul class="pc-only link-list">
-                        <li class="link-list__item"><a href="/#orchard">こもだ果樹園について</a></li>
-                        <li class="link-list__item"><a href="/#circulation">自然循環栽培法</a></li>
+                        <li class="link-list__item"><a href="<?php echo home_url(); ?>/#orchard">こもだ果樹園について</a></li>
+                        <li class="link-list__item"><a href="<?php echo home_url(); ?>/#circulation">自然循環栽培法</a></li>
                         <li class="link-list__item">
-                            <a href="/#commitment">こだわり</a>
+                            <a href="<?php echo home_url(); ?>/#commitment">こだわり</a>
                             <div class="dropdown-item">
-                                <a href="/#sdg">SDGs</a>
+                                <a href="<?php echo home_url(); ?>/#sdg">SDGs</a>
                             </div>
                         </li>
-                        <li class="link-list__item"><a href="/#attempt">取り組み</a></li>
-                        <li class="link-list__item"><a href="/#products">商 品</a></li>
+                        <li class="link-list__item"><a href="<?php echo home_url(); ?>/#attempt">取り組み</a></li>
+                        <li class="link-list__item"><a href="<?php echo home_url(); ?>/#products">商 品</a></li>
                     </ul>
                     <div class="header--hamburger" onclick="toggleMenu()">
                         <span></span>
@@ -50,14 +50,14 @@
                         <div class="nav-sp">
                             <nav class="header sp-only">
                                 <ul class="link-list">
-                                    <li class="link-list__item"><a href="/#orchard">こもだ果樹園について</a></li>
-                                    <li class="link-list__item"><a href="/#circulation">自然循環栽培法</a></li>
-                                    <li class="link-list__item"><a href="/#commitment">こだわり</a></li>
-                                    <li class="link-list__item"><a href="/#attempt">取り組み</a></li>
-                                    <li class="link-list__item"><a href="/#sdg">SDGs</a></li>
-                                    <li class="link-list__item"><a href="/#products">商 品</a></li>
+                                    <li class="link-list__item"><a href="<?php echo home_url(); ?>/#orchard">こもだ果樹園について</a></li>
+                                    <li class="link-list__item"><a href="<?php echo home_url(); ?>/#circulation">自然循環栽培法</a></li>
+                                    <li class="link-list__item"><a href="<?php echo home_url(); ?>/#commitment">こだわり</a></li>
+                                    <li class="link-list__item"><a href="<?php echo home_url(); ?>/#attempt">取り組み</a></li>
+                                    <li class="link-list__item"><a href="<?php echo home_url(); ?>/#sdg">SDGs</a></li>
+                                    <li class="link-list__item"><a href="<?php echo home_url(); ?>/#products">商 品</a></li>
                                     <li>
-                                        <a class="c-btn" href="">
+                                        <a class="c-btn" href="https://www.queenrouge.jp/">
                                             <p>Online Shop</p>
                                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="Online Shop Button">
                                         </a>

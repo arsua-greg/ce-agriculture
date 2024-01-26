@@ -36,7 +36,9 @@
                                 <a href="<?php echo the_permalink(); ?>">
                                     <?php
                                     $featured_img = the_post_thumbnail();
-                                    if ($featured_img == "") : ?>
+                                    if (has_post_thumbnail()) : ?>
+                                        <?php echo $featured_img; ?>
+                                    <?php else : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/release/image/blog_default_img.png" alt="">
                                     <?php endif; ?>
                                 </a>
@@ -88,7 +90,7 @@
                 <h3 class="about-head abth1">信州の環境にやさしい農産物について</h3>
                 <p class="paragraph1">
                     化学肥料及び化学合成農薬について、「地域慣行施肥量」及び「地区農薬使用回数」の50％以上を削減(認証区分：50-50)した方法で栽培された農産物を認証する制度。詳しくは<a href="https://www.pref.nagano.lg.jp/nogi/sangyo/nogyo/sedo.html" target="_blank">こちら</a>をご覧ください。</p>
-                <a class="c-btn" href="/#certification">
+                <a class="c-btn" href="<?php echo home_url(); ?>/#certification">
                     <p>長野県認証</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                 </a>
@@ -131,7 +133,8 @@
                     *2 糖度や食味は、品種ごとの違いや、その年の気候によって変わります。このため、同じ品種でも年によって味が異なることがあります。こもだ果樹園では、その年々の変化を大切にしながら、一貫して高品質を保つよう努めています。ぜひ、その年ごとの味の違いを楽しんでいただき、自然の魅力を感じていただければ幸いです。</p>
             </div>
             <button type="button" class="c-btn sect_3__btn" onclick="showText()">
-                <p>もっと読む</p>
+                <p class="open">もっと読む</p>
+                <p class="close">閉じる</p>
                 <img src="<?php echo get_template_directory_uri(); ?>/release/image/section_3/arrow_down.svg" alt="">
             </button>
         </div>

@@ -347,7 +347,16 @@
   &__btn {
     max-width: 200px;
     margin: 0 auto;
+    .close {
+      display: none;
+    }
     &.isExpanded {
+      .close {
+        display: block;
+      }
+      .open {
+        display: none;
+      }
       &:hover {
         img {
           top: -5px;
