@@ -146,73 +146,75 @@
                     "title" => "Kyoho",
                     "jp_name" => "巨 峰",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
-                    "link" => ""
+                    "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_2.png",
                     "title" => "Nagano Purple",
                     "jp_name" => "ナガノパープル",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
-                    "link" => ""
+                    "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_3.png",
                     "title" => "Shine Masquat",
                     "jp_name" => "シャインマスカット",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
-                    "link" => ""
+                    "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_4.png",
                     "title" => "Queen Rouge",
                     "jp_name" => "クイーンルージュ",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
-                    "link" => ""
+                    "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_5.png",
                     "title" => "Queen Nina",
                     "jp_name" => "クイーンニーナ",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
-                    "link" => ""
+                    "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_6.png",
                     "title" => "Queen Seven",
                     "jp_name" => "クイーンセブン",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
-                    "link" => ""
+                    "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_7.png",
                     "title" => "Grape Juice",
                     "jp_name" => "ぶどうジュース",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
-                    "link" => ""
+                    "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_8.png",
                     "title" => "Semi Dry",
                     "jp_name" => "セミドライ",
                     "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
-                    "link" => ""
+                    "link" => "https://www.queenrouge.jp/"
                 ],
             ];
 
             foreach ($products as $product) :
             ?>
                 <div class="product-item">
-                    <img src="<?= get_template_directory_uri(); ?>/release/image/section_3/<?= $product["image"]; ?>" alt="">
-                    <div class="product-item__float"></div>
-                    <div class="product-item__text-container delete-bg">
-                        <p class="product-item__title"><?= $product["title"]; ?></p>
-                        <p class="product-item__jp-name"><?= $product["jp_name"]; ?></p>
-                        <p class="product-item__catchphrase"><?= $product["catchphrase"]; ?></p>
-                        <button type="button" class="c-btn product-item__btn">
-                            <p>Online Shop</p>
-                            <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
-                        </button>
-                    </div>
+                    <a href="<?= $product["link"]; ?>">
+                        <img src="<?= get_template_directory_uri(); ?>/release/image/section_3/<?= $product["image"]; ?>" alt="">
+                        <div class="product-item__float"></div>
+                        <div class="product-item__text-container delete-bg">
+                            <p class="product-item__title"><?= $product["title"]; ?></p>
+                            <p class="product-item__jp-name"><?= $product["jp_name"]; ?></p>
+                            <p class="product-item__catchphrase"><?= $product["catchphrase"]; ?></p>
+                            <button href="<?= $product["link"]; ?>" type="button" class="c-btn product-item__btn">
+                                <p>Online Shop</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
+                            </button>
+                        </div>
+                    </a>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -318,5 +320,35 @@
             </div>
         </div>
     </section>
+    <div class="footer-container">
+        <div class="footer-title">
+            <h2 class="title-main">信 頼</h2>
+            <span class="sub-title">Trust</span>
+        </div>
+        <div class="footer_column">
+            <div class="footer_column--col">
+                <p class="title">長野認証</p>
+                <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/footer_logo_1.png" alt="">
+                <p class="content">当園のぶどうは全て、信州の環境にやさしい農産物（長野県認証）において<br>
+                    ・　節減対象農薬：当地比50％減<br>
+                    ・　化学肥料（窒素成分）：不使用<br>
+                    ・　除草剤：不使用<br>
+                    にて栽培されたぶどうです。<br>
+                    完熟堆肥と自然由来の腐食酸を土作りの基本資材とし、微生物多様性と土地の環境の恵みを最大限に引き出すよう栽培を心がけています。
+                </p>
+            </div>
+            <div class="footer_column--col">
+                <p class="title">フードアクション2020</p>
+                <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/footer_logo_2.png" alt="">
+                <p class="content">
+                    フード・アクション・ニッポン アワード2020で、皮ごと食べる3色ぶどうギフトセットが特別賞を受賞いたしました。<br>
+                    フード・アクション・ニッポンは、日本の食を次の世代に残し、創るために、民間企業・ 団体・行政・消費者等が<br>
+                    一体となって推進する国産農林水産物の消費拡大の取組です。<br><br>
+                    Youtube<br>
+                </p>
+                <a class="content link" href="https://www.youtube.com/watch?v=IGRSMwYZiuc">https://www.youtube.com/watch?v=IGRSMwYZiuc</a>
+            </div>
+        </div>
+    </div>
 </div>
 <?php get_footer(); ?>

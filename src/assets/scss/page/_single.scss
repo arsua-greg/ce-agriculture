@@ -55,6 +55,32 @@
       display: block;
     }
   }
+  .date_with_category {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .category {
+      background-color: $color-sub;
+      padding: 5px 15px;
+      width: max-content;
+      margin: 15px 0;
+
+      @include is-sp {
+        margin: 15px auto;
+      }
+
+      img {
+        aspect-ratio: 1;
+      }
+
+      p {
+        @include font-line(16px);
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
 }
 
 .related_posts {

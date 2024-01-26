@@ -37,8 +37,6 @@
         }
 
         @include is-sp {
-          @include font-line(18px, 26px);
-          font-weight: 400;
           &:not(:last-child) {
             margin-bottom: 40px;
           }
@@ -63,7 +61,7 @@
         }
 
         a {
-          @include font-line(15px, 21px);
+          @include font-line(18px, 26px);
           color: #fff;
           font-family: $font-family-base;
           font-weight: 400;

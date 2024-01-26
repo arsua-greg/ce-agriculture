@@ -15,7 +15,19 @@ while (have_posts()) : the_post(); ?>
             <div class="post_content--title">
                 <?php echo the_title(); ?>
             </div>
-            <p class="post_content--date"><?php echo get_the_date("Y.m.d"); ?></p>
+            <div class="date_with_category">
+                <p class="post_content--date"><?php echo get_the_date("Y.m.d"); ?></p>
+                <div class="category">
+                    <?php $categories = get_the_category();
+                    foreach ($categories as $category) : ?>
+                        <p>
+                            <a href="<?php echo get_category_link($category->term_id); ?>">
+                                <?php echo $category->name; ?>
+                            </a>
+                        </p>
+                    <?php endforeach; ?>
+                </div>
+            </div>
             <div class="post_content--content"><?php echo the_content(); ?></div>
         </div>
     </div>
