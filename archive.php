@@ -6,7 +6,8 @@ get_header(); ?>
 <div class="page__category">
     <div class="category-content">
         <div class="l-wrap">
-            <h1 class="title-main">ぶどうジュース</h1>
+            <?php $category_title = single_cat_title('', false); ?>
+            <h1 class="title-main"><?php echo $category_title; ?></h1>
             <div class="category-content__posts">
                 <?php while (have_posts()) : the_post(); ?>
                     <a href="<?php echo get_permalink(); ?>" class="blog-item">
