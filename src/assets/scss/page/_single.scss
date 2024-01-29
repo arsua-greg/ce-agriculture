@@ -61,7 +61,6 @@
     gap: 20px;
     .category {
       background-color: $color-sub;
-      padding: 5px 15px;
       width: max-content;
       margin: 15px 0;
 
@@ -74,6 +73,11 @@
         color: #fff;
         font-weight: 400;
         text-align: center;
+      }
+
+      a {
+        padding: 5px 15px;
+        display: block;
       }
     }
   }
