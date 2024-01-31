@@ -245,19 +245,12 @@
           @include font-line(16px, 32px);
           font-weight: 300;
           font-family: $font-family-base;
-          padding-bottom: 30px;
-        }
-      }
-
-      .img-box {
-        @include is-min($breakpoint-max-tab) {
-          width: 40%;
+          padding-bottom: 15px;
         }
 
         .signature {
-          padding-top: 15px;
+          padding-bottom: 30px;
           width: 300px;
-          margin-left: auto;
           display: block;
           @include is-max($breakpoint-max-tab) {
             margin: 0 auto;
@@ -265,6 +258,12 @@
           @include is-max($breakpoint-sp) {
             max-width: 200px;
           }
+        }
+      }
+
+      .img-box {
+        @include is-min($breakpoint-max-tab) {
+          width: 40%;
         }
       }
     }

@@ -104,6 +104,7 @@
                     <p class="paragraph1">『東御のぶどうの味をもっと沢山の人に伝えたい。』<br />
                         東京でITエンジニアとしてのキャリアから転身、ぶどう栽培の道へ進むため長野の東御に移住。自然循環栽培の草分け的な存在に。ぶどうの生食用にとどまらず、加工品も展開。東御ブランドの新しい可能性を探求し続けています。
                     </p>
+                    <img id="products" class="signature" src="<?php echo get_template_directory_uri(); ?>/release/image/section2/04.png" alt="">
                     <a class="c-btn" href="">
                         <p>詳しくはこちら</p>
                         <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
@@ -111,7 +112,6 @@
                 </div>
                 <div class="img-box">
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/section2/03.png" alt="">
-                    <img id="products" class="signature" src="<?php echo get_template_directory_uri(); ?>/release/image/section2/04.png" alt="">
                 </div>
             </div>
         </div>
