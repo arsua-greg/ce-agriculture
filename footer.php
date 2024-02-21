@@ -19,7 +19,7 @@
                         <a href="https://www.instagram.com/kyoho.jp/" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/insta.svg" alt="">
                         </a>
-                        <a href="https://www.youtube.com/channel/UCScttm-KXLJbutyh9wAtRxA">
+                        <a href="https://www.youtube.com/channel/UCScttm-KXLJbutyh9wAtRxA" target="_blank">
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/footer/youtube.svg" alt="">
                         </a>
                         <a href="https://www.facebook.com/tomikomoda" target="_blank">

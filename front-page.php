@@ -68,9 +68,10 @@
                 <h2>自然循環栽培法</h2>
                 <p class="text1">Natural Circulation</p>
                 <p class="paragraph1">
-                    菌根菌と共存するぶどうの根は、地下深くからリン酸を吸収し、植物のエネルギー循環を活性化させ、糖の生産力を高めます。また、多種多様なミネラルやアミノ酸を吸収し、果実に蓄積することで、甘さと複雑さを増すと期待されています。一方、従来の農法では、地面から15cmの深さでのみ栄養を吸収し、化学肥料の使用により微生物の多様性が低下し、風味に影響を及ぼす可能性があります。
+                    自然循環栽培法は、化学肥料や除草剤を使わず、自然の力を活用する栽培法です。<br>
+                    完熟堆肥と腐植酸を用いて土壌微生物を育て、水や空気の通り道を作り出し、作物が育ちやすい土壌環境をつくります。雑草との共存により菌根菌と根粒菌を活性化させ、肥料に頼らない自然な方法でぶどうの生育に必要な養分の供給を促進します。この方法は、環境負荷が少なく、持続可能な農業を実現するためのものです。
                 </p>
-                <a class="c-btn" href="">
+                <a class="c-btn" href="https://www.tsukijiichiba.com/user/collection/642" target="_blank">
                     <p>詳しくはこちら</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                 </a>
@@ -84,13 +85,17 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/release/image/section2/02.png" alt="">
             </div>
             <div class="datail-box db">
-                <h2>化学肥料は不使用</h2>
-                <p class="text1">No Chemical</p>
-                <p class="paragraph1 prgrph1">当園自慢のぶどうは、全て信州の環境にやさしい農産物50（長野県認証）認定を受けた、おいしさと安全を追求した逸品です。</p>
-                <h3 class="about-head abth1">信州の環境にやさしい<br class="sp-only">農産物について</h3>
-                <p class="paragraph1">
-                    化学肥料及び化学合成農薬について、「地域慣行施肥量」及び「地区農薬使用回数」の50％以上を削減(認証区分：50-50)した方法で栽培された農産物を認証する制度。詳しくは<a href="https://www.pref.nagano.lg.jp/nogi/sangyo/nogyo/sedo.html" target="_blank">こちら</a>をご覧ください。</p>
-                <a class="c-btn" href="<?php echo home_url(); ?>/#certification">
+                <h2>信州の環境にやさしい農産物(長野県認証)</h2>
+                <p class="text1">Environmentally friendly agricultural products from Shinshu (certified by Nagano, Japan)</p>
+                <p class="paragraph1">長野県が実施している「信州の環境にやさしい農産物認証制度」です。<br>
+                    この制度は、化学肥料や農薬の使用量を減らして生産された農産物を認証するもので、消費者に安心と信頼を提供するとともに、自然環境の保全に貢献しています。</p>
+                <h3 class="about-head abth1">節減対象農薬：当地比 5割減</h3>
+
+                <h3 class="about-head abth1">化学肥料(窒素成分)：栽培期間中不使用</h3>
+
+
+                <p class="paragraph1">当園自慢のぶどうは、全て信州の環境にやさしい農産物50(長野県認証)認定を受けた、おいしさと安全を追求した逸品です。詳しくは<a href="https://www.pref.nagano.lg.jp/nogi/sangyo/nogyo/sedo.html" target="_blank">こちら</a>をご覧ください。</p>
+                <a class="c-btn" href="https://www.pref.nagano.lg.jp/nogi/sangyo/nogyo/sedo.html" target="_blank">
                     <p>長野県認証</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                 </a>
@@ -105,7 +110,7 @@
                         東京でITエンジニアとしてのキャリアから転身、ぶどう栽培の道へ進むため長野の東御に移住。自然循環栽培の草分け的な存在に。ぶどうの生食用にとどまらず、加工品も展開。東御ブランドの新しい可能性を探求し続けています。
                     </p>
                     <img id="products" class="signature" src="<?php echo get_template_directory_uri(); ?>/release/image/section2/04.png" alt="">
-                    <a class="c-btn" href="">
+                    <a class="c-btn" href="https://tomi-city.note.jp/n/n6511f18f834d" target="_blank">
                         <p>詳しくはこちら</p>
                         <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                     </a>
@@ -145,56 +150,56 @@
                     "image" => "sect_3_img_1.png",
                     "title" => "Kyoho",
                     "jp_name" => "巨 峰",
-                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "catchphrase" => "ぶどうの王様。濃厚コクと甘さ。",
                     "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_2.png",
                     "title" => "Nagano Purple",
                     "jp_name" => "ナガノパープル",
-                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "catchphrase" => "皮ごと食べるぶどう王様。爽やかな甘さ上品な風味。",
                     "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_3.png",
                     "title" => "Shine Masquat",
                     "jp_name" => "シャインマスカット",
-                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "catchphrase" => "ぶどうの女王。プリプリ食感に繊細な甘さ。",
                     "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_4.png",
                     "title" => "Queen Rouge",
                     "jp_name" => "クイーンルージュ",
-                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "catchphrase" => "赤いシャインマスカット。はちみつのような甘さ。",
                     "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_5.png",
                     "title" => "Queen Nina",
                     "jp_name" => "クイーンニーナ",
-                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "catchphrase" => "赤い大粒。甘くジューシー香り豊か。",
                     "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_6.png",
                     "title" => "Queen Seven",
                     "jp_name" => "クイーンセブン",
-                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "catchphrase" => "甘さの極み。お菓子のようなサクサク食感。",
                     "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_7.png",
                     "title" => "Grape Juice",
                     "jp_name" => "ぶどうジュース",
-                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "catchphrase" => "完熟巨峰をそのまま搾る、自然な甘さと芳醇な香り。",
                     "link" => "https://www.queenrouge.jp/"
                 ],
                 [
                     "image" => "sect_3_img_8.png",
                     "title" => "Semi Dry",
                     "jp_name" => "セミドライ",
-                    "catchphrase" => "ここにキャッチコピーここにキャッチコピー",
+                    "catchphrase" => "ぶどうの房ごとセミドライ、凝縮感と爽やかな香り。",
                     "link" => "https://www.queenrouge.jp/"
                 ],
             ];
@@ -249,7 +254,7 @@
                 </div>
             </div>
             <div class="anchorTagBtn" id="attempt">
-                <a class="c-btn" href="">
+                <a class="c-btn" href="https://anshindo-d.com/c/shop_category/shop_fruits/shop_fruits_budou/1270" target="_blank">
                     <p>詳しくはこちら</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                 </a>
@@ -290,7 +295,7 @@
                 </div>
             </div>
             <div class="anchorTagBtn1">
-                <a class="c-btn" href="">
+                <a class="c-btn" href="https://kyoho.jp/wp/archives/28">
                     <p>詳しくはこちら</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                 </a>
@@ -300,14 +305,14 @@
         <div class='l-wrap-2' id="sdg">
             <div class='custom-flex-container'>
                 <div class='custom-item-column'>
-                    <h2 class="title-main">SDGS</h2>
+                    <h2 class="title-main">SDGs</h2>
                     <p class="sub-title">SDGs</p>
-                    <p class="question">SDGSって何？</p>
+                    <p class="question">SDGsって何？</p>
                     <p class="answer">SDGsは、2030年までに達成すべき17の国際目標です。これらの目標は、貧困、不平等、気候変動などのグローバルな課題を解決するための道筋を示しています。</p>
                     <p class='text-cultivation'>環境に配慮した自然循環栽培</p>
                     <p class='text-industry'>農林水産業が掲げる「みどりの食料システム」に準拠しています。</p>
                     <div class="anchorTagBtn2">
-                        <a class="c-btn" href="">
+                        <a class="c-btn" href="https://kyoho.jp/wp/archives/35">
                             <p>詳しくはこちら</p>
                             <img src="<?php echo get_template_directory_uri(); ?>/release/image/arrow_link.svg" alt="">
                         </a>

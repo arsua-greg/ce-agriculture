@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24.849" viewBox="0 0 25 24.849">
-  <path id="Icon_awesome-facebook" data-name="Icon awesome-facebook" d="M25.563,13.063A12.5,12.5,0,1,0,11.109,25.411V16.676H7.934V13.063h3.175V10.308c0-3.133,1.865-4.863,4.721-4.863a19.237,19.237,0,0,1,2.8.244V8.764H17.052a1.807,1.807,0,0,0-2.037,1.952v2.346h3.467l-.554,3.613H15.016v8.735A12.5,12.5,0,0,0,25.563,13.063Z" transform="translate(-0.563 -0.563)" fill="#fff"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24.849"><path id="Icon_awesome-facebook" data-name="Icon awesome-facebook" d="M25.563 13.063a12.5 12.5 0 10-14.454 12.348v-8.735H7.934v-3.613h3.175v-2.755c0-3.133 1.865-4.863 4.721-4.863a19.237 19.237 0 012.8.244v3.075h-1.578a1.807 1.807 0 00-2.037 1.952v2.346h3.467l-.554 3.613h-2.912v8.735a12.5 12.5 0 0010.547-12.347z" transform="translate(-.563 -.563)" fill="#fff"/></svg>
