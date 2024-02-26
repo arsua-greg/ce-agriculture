@@ -60,15 +60,18 @@
     align-items: center;
     gap: 20px;
     .category {
-      background-color: $color-sub;
       width: max-content;
       margin: 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
 
       img {
         aspect-ratio: 1;
       }
 
       p {
+        background-color: $color-sub;
         @include font-line(16px);
         color: #fff;
         font-weight: 400;

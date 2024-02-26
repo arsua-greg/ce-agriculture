@@ -36,9 +36,11 @@
     }
 
     .category {
-      background-color: $color-sub;
       width: max-content;
       margin: 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
 
       @include is-sp {
         margin: 15px auto;
@@ -49,6 +51,7 @@
       }
 
       p {
+        background-color: $color-sub;
         @include font-line(16px);
         color: #fff;
         font-weight: 400;
